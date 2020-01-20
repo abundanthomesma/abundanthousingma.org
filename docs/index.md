@@ -6,4 +6,4 @@ For now, please read our [statement on local option housing/tenant protections b
 
 [Follow us on Twitter](https://twitter.com/abundanthomesma)
 
-[Check out our Facebook Page](https://www.facebook.com/abundanthomesma)
+[Check out our Facebook Page](https://www.facebook.com/AbundantHousingMA/)
