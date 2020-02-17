@@ -46,6 +46,7 @@ For now, please read our [statement on local option housing/tenant protections b
 [Check out our Facebook Page](https://www.facebook.com/AbundantHousingMA/)
 
 <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
 <div id="mc_embed_signup">
 <form action="https://abundanthousingma.us4.list-manage.com/subscribe/post?u=8783bb28127fa91a7ac0a27eb&amp;id=d5619fa241" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
