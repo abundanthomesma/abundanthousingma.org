@@ -31,7 +31,7 @@ We believe that when communities, builders, and planners come together, in good 
 
 We will:
 
-* Convene pro-housing groups around the state shape their messages and become more effective
+* Convene pro-housing groups around the state to help shape their messages and become more effective
 * Nurture diversity within grassroots pro-housing groups
 * Coordinate support for statewide and local legislative and regulatory initiatives
 
