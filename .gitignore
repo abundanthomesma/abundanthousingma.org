@@ -9,6 +9,8 @@ web/app/uploads/*
 # WordPress
 web/wp
 web/.htaccess
+# Part of Divi theme
+web/app/et-cache
 
 # Logs
 *.log
