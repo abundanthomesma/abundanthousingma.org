@@ -1,18 +1,25 @@
 // Colors
-$brand-primary:         #525ddc;
-$blue:                  #1565c0;
-$blue-light:            #3b83d5;
-$gray:                  #333;
+$blue:                  #73cad5;
+$red-light:             #f3726a;
+$grey:                  #58595b;
+$brown:                 #aa9f89;
+$brown-light:           #e9e6e0;
+$brown-dark:            #473f3a;
 $white:                 #fff;
 
 // Box Model
 $spacer:                2rem;
 
 // Font Colors
-$font-color--base: $gray;
-$action-color: $blue;
-$action-color--alt: $blue-light;
+$font-color--base: $grey;
+$action-color: $red-light;
+$action-color--alt: $blue;
 $action-color--contrast: $white;
+$bg-color--signup: $brown;
+$bg-color--alt: $blue;
+$bg-color--contrast: $red-light;
+$bg-color--contrast-alt: $brown-light;
+$bg-color--footer: $brown-dark;
 
 // Background Colors
 $viewport-background-color: $white;
