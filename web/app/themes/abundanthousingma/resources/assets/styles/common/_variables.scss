@@ -26,8 +26,10 @@ $viewport-background-color: $white;
 
 :root {
   // Typography
-  --font-family: system-ui, sans-serif;
-  --font-family--heading: var(--font-family);
+  // Europa-Regular from Adobe Fonts Typekit
+  --font-family: europa, sans-serif;
+  // Alternate Gothic No3 D Regular
+  --font-family--heading: alternate-gothic-no-3-d, sans-serif;
   --font-weight--thin: 100;
   --font-weight--extra-light: 200;
   --font-weight--light: 300;
