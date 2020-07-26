@@ -54,12 +54,13 @@
 ) {
   @font-face {
     font-family: $font-family;
-    src: _font-source-declaration(
-      $font-family,
-      $file-path,
-      $asset-pipeline,
-      $file-formats
-    );
+    src:
+      _font-source-declaration(
+        $font-family,
+        $file-path,
+        $asset-pipeline,
+        $file-formats
+      );
     @content;
   }
 }

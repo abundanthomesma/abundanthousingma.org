@@ -30,6 +30,14 @@ textarea {
   font-size: 1rem;
 }
 
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+textarea {
+  resize: vertical;
+}
+
 [type="color"],
 [type="date"],
 [type="datetime"],
@@ -73,14 +81,6 @@ textarea {
     color: $font-color--base;
     opacity: 0.25;
   }
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-}
-
-textarea {
-  resize: vertical;
 }
 
 [type="checkbox"],

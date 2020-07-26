@@ -25,7 +25,8 @@
 
   @if $-local-lightness-1 > $-local-lightness-2 {
     @return $-local-lightness-1 / $-local-lightness-2;
-  } @else {
+  }
+  @else {
     @return $-local-lightness-2 / $-local-lightness-1;
   }
 }

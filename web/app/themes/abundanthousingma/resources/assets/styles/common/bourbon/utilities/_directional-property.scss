@@ -48,21 +48,25 @@
 
     @if length($values) == 1 {
       @if nth($values, 1) { #{$right}: nth($values, 1); }
-    } @else {
+    }
+    @else {
       @if nth($values, 2) { #{$right}: nth($values, 2); }
     }
 
     @if length($values) == 2 {
       @if nth($values, 1) { #{$bottom}: nth($values, 1); }
       @if nth($values, 2) { #{$left}: nth($values, 2); }
-    } @else if length($values) == 3 {
+    }
+    @else if length($values) == 3 {
       @if nth($values, 3) { #{$bottom}: nth($values, 3); }
       @if nth($values, 2) { #{$left}: nth($values, 2); }
-    } @else if length($values) == 4 {
+    }
+    @else if length($values) == 4 {
       @if nth($values, 3) { #{$bottom}: nth($values, 3); }
       @if nth($values, 4) { #{$left}: nth($values, 4); }
     }
-  } @else {
+  }
+  @else {
     #{$all}: $values;
   }
 }

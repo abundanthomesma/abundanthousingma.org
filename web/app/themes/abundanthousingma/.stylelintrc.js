@@ -3,6 +3,7 @@ module.exports = {
   'rules': {
     'no-empty-source': null,
     'string-quotes': 'double',
+    'at-rule-empty-line-before': null,
     'at-rule-no-unknown': [
       true,
       {
@@ -27,6 +28,15 @@ module.exports = {
           'responsive',
           'variants',
           'screen',
+        ],
+      },
+    ],
+    'property-no-unknown': [
+      true,
+      {
+        'ignoreProperties': [
+          // Valid CSS, but not yet known by Stylelint
+          'text-decoration-skip-ink',
         ],
       },
     ],

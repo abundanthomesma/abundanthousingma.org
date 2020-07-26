@@ -39,10 +39,12 @@
 
       @if $asset-pipeline == true {
         $src: append($src, font-url($file-path) $font-format, comma);
-      } @else {
+      }
+      @else {
         $src: append($src, url($file-path) $font-format, comma);
       }
-    } @else {
+    }
+    @else {
       @error "`#{$file-formats}` contains an unsupported font file format. " +
         "Must be `woff` and/or `woff2`.";
     }

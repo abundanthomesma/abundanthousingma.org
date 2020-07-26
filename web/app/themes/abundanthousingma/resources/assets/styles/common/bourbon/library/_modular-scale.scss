@@ -92,7 +92,8 @@
       @if $double-stranded and ($v1 * $ratio) > $v2 {
         $value: $v2;
         $v2: ($v2 * $ratio);
-      } @else {
+      }
+      @else {
         $v1: ($v1 * $ratio);
         $value: $v1;
       }
@@ -109,7 +110,8 @@
       @if $double-stranded and ($v1 / $ratio) < $v2 {
         $value: $v2;
         $v2: ($v2 / $ratio);
-      } @else {
+      }
+      @else {
         $v1: ($v1 / $ratio);
         $value: $v1;
       }

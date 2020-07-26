@@ -33,5 +33,6 @@
   @each $prefix in $prefixes {
     #{$property}: #{"-" + $prefix + "-" + $value};
   }
+
   #{$property}: $value;
 }
