@@ -11,8 +11,9 @@
  */
 // @import "~some-node-module";
 
+@import "common/bourbon";
+
 /** Import theme styles */
-@import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
