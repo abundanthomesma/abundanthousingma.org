@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1rem 1rem 4rem;
+  margin: 1rem auto 4rem;
+  max-width: $max-width-content;
 
   a {
     color: $font-color--base;
