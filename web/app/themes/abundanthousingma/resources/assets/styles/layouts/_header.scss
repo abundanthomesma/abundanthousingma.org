@@ -1,2 +1,82 @@
-// TODO: .banner .nav li {}
-// TODO: .banner .nav a {}
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 1rem 4rem;
+
+  a {
+    color: $font-color--base;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+.nav-primary {
+  .nav-primary-extras {
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.75rem;
+    text-align: right;
+
+    .header-social {
+      margin: 1rem 0 2rem;
+    }
+  }
+
+  .nav {
+    display: flex;
+
+    a {
+      display: inline-block;
+      padding: 0 var(--spacing--small);
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+
+    .menu-item-42 a {
+      background-color: $action-color;
+      color: $action-color--contrast;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color var(--duration) var(--timing);
+      white-space: nowrap;
+
+      &:hover {
+        background-color: $action-color--alt;
+      }
+
+      &:focus {
+        outline: var(--focus-outline);
+        outline-offset: var(--focus-outline-offset);
+      }
+    }
+  }
+}
+
+.page-header {
+  background-image: url("resources/assets/images/bg-page-header.jpg");
+  background-size: auto 237px;
+  background-repeat: no-repeat;
+  color: $font-color--contrast;
+  min-height: 237px;
+
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  .header-signup {
+    background-color: $bg-color--signup;
+
+    h3 {
+      font-family: var(--font-family--contrast);
+      font-weight: var(--font-weight--normal);
+    }
+
+    [type="email"] {
+      background-color: $viewport-background-color;
+    }
+  }
+}

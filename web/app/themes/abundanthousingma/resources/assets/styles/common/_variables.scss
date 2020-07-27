@@ -12,6 +12,7 @@ $spacer:                2rem;
 
 // Font Colors
 $font-color--base: $grey;
+$font-color--contrast: $white;
 $action-color: $red-light;
 $action-color--alt: $blue;
 $action-color--contrast: $white;
@@ -28,8 +29,9 @@ $viewport-background-color: $white;
   // Typography
   // Europa-Regular from Adobe Fonts Typekit
   --font-family: europa, sans-serif;
+  --font-family--heading: var(--font-family);
   // Alternate Gothic No3 D Regular
-  --font-family--heading: alternate-gothic-no-3-d, sans-serif;
+  --font-family--contrast: alternate-gothic-no-3-d, sans-serif;
   --font-weight--thin: 100;
   --font-weight--extra-light: 200;
   --font-weight--light: 300;
