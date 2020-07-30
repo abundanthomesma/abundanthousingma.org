@@ -1,0 +1,32 @@
+.footer-site {
+  background-color: $bg-color--footer;
+  color: $font-color--contrast;
+  font-size: 1.125rem;
+
+  .wp-block-group__inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $max-width-content;
+    padding: 5.625rem 0;
+  }
+
+  // Copyright text
+  .footer-copyright-name {
+    font-size: 1.3125rem;
+  }
+
+  // Mailchimp signup form in footer
+  .footer-signup {
+    [type="email"]::placeholder {
+      font-family: var(--font-family--contrast);
+      font-size: 1.5rem;
+      text-transform: none;
+    }
+
+    [type="submit"] {
+      font-size: 1.625rem;
+    }
+  }
+}

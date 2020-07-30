@@ -1,5 +1,7 @@
 // import external dependencies
 import 'jquery';
+// https://github.com/cferdinandi/bouncer
+import 'formbouncerjs';
 
 // Import everything from autoload
 import './autoload/**/*'

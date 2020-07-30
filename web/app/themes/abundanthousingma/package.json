@@ -76,6 +76,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "formbouncerjs": "^1.4.6",
     "jquery": "^3.3.1"
   }
 }

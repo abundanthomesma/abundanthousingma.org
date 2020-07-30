@@ -12,52 +12,50 @@
   }
 }
 
-.nav-primary {
-  .nav-primary-extras {
-    align-items: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0.75rem;
-    text-align: right;
+.nav-primary-extras {
+  align-items: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0.75rem;
+  text-align: right;
+}
 
-    .header-social {
-      margin: 1rem 0 2rem;
+.nav {
+  display: flex;
+
+  a {
+    display: inline-block;
+    padding: 0 var(--spacing--small);
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    &:hover {
+      color: $action-color;
     }
   }
 
-  .nav {
-    display: flex;
+  .menu-donate a {
+    background-color: $action-color;
+    color: $action-color--contrast;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--duration) var(--timing);
+    white-space: nowrap;
 
-    a {
-      display: inline-block;
-      padding: 0 var(--spacing--small);
-      text-transform: uppercase;
-      vertical-align: middle;
+    &:hover {
+      background-color: $action-color--alt;
     }
 
-    .menu-item-42 a {
-      background-color: $action-color;
-      color: $action-color--contrast;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color var(--duration) var(--timing);
-      white-space: nowrap;
-
-      &:hover {
-        background-color: $action-color--alt;
-      }
-
-      &:focus {
-        outline: var(--focus-outline);
-        outline-offset: var(--focus-outline-offset);
-      }
+    &:focus {
+      outline: var(--focus-outline);
+      outline-offset: var(--focus-outline-offset);
     }
   }
 }
 
 .page-header {
-  background-image: url("resources/assets/images/bg-page-header.jpg");
+  background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-page-header.jpg");
   background-size: auto 237px;
   background-repeat: no-repeat;
   color: $font-color--contrast;
@@ -74,10 +72,6 @@
     h3 {
       font-family: var(--font-family--contrast);
       font-weight: var(--font-weight--normal);
-    }
-
-    [type="email"] {
-      background-color: $viewport-background-color;
     }
   }
 }

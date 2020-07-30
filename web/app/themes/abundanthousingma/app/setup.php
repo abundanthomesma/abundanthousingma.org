@@ -66,6 +66,12 @@ add_action('after_setup_theme', function () {
     add_theme_support('customize-selective-refresh-widgets');
 
     /**
+     * Enable responsive embeds via the GUtenberg editor
+     * @link https://thrivewp.com/youtube-embed-wordpress/
+     */
+    add_theme_support('responsive-embeds');
+
+    /**
      * Use main stylesheet for visual editor
      * @see resources/assets/styles/layouts/_tinymce.scss
      */

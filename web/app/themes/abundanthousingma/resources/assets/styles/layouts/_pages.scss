@@ -4,3 +4,181 @@
     margin-left: auto;
     max-width: $max-width-content;
   }
+
+  .main {
+    & > .wp-block-group {
+      display: flex;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+
+      .wp-block-group__inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+
+    .a-spot {
+      background-color: $bg-color--alt;
+      @include angle(after, true, 2deg);
+
+      .wp-block-group__inner-container {
+        justify-content: space-between;
+      }
+
+      .header-group {
+        width: 33%;
+      }
+
+      .wp-block-embed {
+        width: 66%;
+      }
+
+      h2 {
+        color: $font-color--contrast;
+        font-size: 3.75rem;
+      }
+
+      .wp-block-button__link {
+        font-size: 2rem;
+      }
+    }
+
+    .b-spot {
+      background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-home-outlines.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+
+      .wp-block-group__inner-container {
+        align-content: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+
+        > * {
+          width: 75%;
+        }
+      }
+
+      h2 {
+        color: $action-color;
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .mc-embedded-subscribe-form {
+        background-color: $bg-color--signup;
+      }
+
+      [type="email"]::placeholder {
+        text-transform: uppercase;
+      }
+
+      [type="submit"] {
+        font-size: 1.625rem;
+
+        &:hover {
+          background-color: $action-color--alt;
+        }
+      }
+    }
+
+    .c-spot {
+      background-color: $bg-color--contrast;
+      color: $font-color--contrast;
+      @include angle(before, true, 4.5deg);
+
+      h2 {
+        font-size: 3.75rem;
+        order: 2;
+      }
+
+      h3 {
+        font-family: var(--font-family--contrast);
+        font-size: 3rem;
+        order: 3;
+      }
+
+      .wp-block-group__inner-container {
+        align-content: flex-start;
+      }
+
+      .header-group {
+        order: 2;
+        width: 50%;
+        margin-left: 10%;
+      }
+
+      .wp-block-embed {
+        order: 1;
+        width: 40%;
+      }
+    }
+
+    .d-spot {
+      background-color: $bg-color--contrast-alt;
+      @include angle(after, false, 4.5deg);
+
+      h2 {
+        color: $action-color;
+        font-size: 3rem;
+      }
+
+      .wp-block-latest-posts a {
+        color: $font-color--base;
+        font-family: var(--font-family--contrast);
+        font-size: 4rem;
+        text-decoration: none;
+      }
+
+      .wp-block-buttons {
+        margin-top: 1rem;
+      }
+
+      a.wp-block-button__link {
+        background-color: $font-color--base;
+        color: $font-color--contrast;
+        font-family: var(--font-family--contrast);
+        font-size: 1.4244rem;
+
+        &:hover {
+          background-color: $action-color;
+        }
+      }
+
+      .wp-block-latest-posts__featured-image.alignright {
+        margin-left: 1rem;
+        max-width: 33%;
+      }
+    }
+
+    .e-spot {
+      padding-top: 8rem;
+
+      .wp-block-gallery {
+        width: 60%;
+      }
+
+      .wp-block-group {
+        margin-left: 5%;
+        max-width: 35%;
+      }
+
+      h2 {
+        color: $action-color;
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

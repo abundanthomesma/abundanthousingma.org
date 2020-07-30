@@ -2,6 +2,7 @@
 $blue:                  #73cad5;
 $red-light:             #f3726a;
 $grey:                  #58595b;
+$grey-light:            #d9d9da;
 $brown:                 #aa9f89;
 $brown-light:           #e9e6e0;
 $brown-dark:            #473f3a;
@@ -16,17 +17,19 @@ $font-color--contrast: $white;
 $action-color: $red-light;
 $action-color--alt: $blue;
 $action-color--contrast: $white;
+$action-color--contrast-alt: $brown;
+
+// Background Colors
+$bg-color--viewport: $white;
 $bg-color--signup: $brown;
 $bg-color--alt: $blue;
 $bg-color--contrast: $red-light;
 $bg-color--contrast-alt: $brown-light;
 $bg-color--footer: $brown-dark;
-
-// Background Colors
-$viewport-background-color: $white;
+$bg-color--footer-contrast: $brown;
 
 // Sizes for Layout
-$max-width-content: 1300px;
+$max-width-content: 77.75rem;
 
 :root {
   // Typography
@@ -51,8 +54,8 @@ $max-width-content: 1300px;
 
   // Other Sizes
   --border-radius: 0.1875rem;
-  --spacing: 1.5rem;
-  --spacing--small: 0.75rem;
+  --spacing: 2.8125rem;
+  --spacing--small: 1rem;
 
   // Borders
   --border-width: 0.0625rem;

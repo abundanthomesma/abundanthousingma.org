@@ -3,3 +3,56 @@
 // TODO: .search-form label {}
 // TODO: .search-form .search-field {}
 // TODO: .search-form .search-submit {}
+
+.mc-embedded-subscribe-form {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .mc-field-group {
+    align-self: stretch;
+  }
+
+  label,
+  input {
+    margin: auto;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  h3,
+  label {
+    color: $font-color--contrast;
+    font-family: var(--font-family--contrast);
+    font-size: 1.875rem;
+    font-weight: var(--font-weight--normal);
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  [type="email"] {
+    background-color: $bg-color--viewport;
+    line-height: 1.625rem;
+    min-width: 18.375rem;
+    padding-top: var(--spacing--small);
+    padding-bottom: var(--spacing--small);
+
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
+
+  [type="submit"] {
+    font-family: var(--font-family--contrast);
+    font-size: 1.625rem;
+    font-weight: var(--font-weight--normal);
+    margin-left: var(--spacing--small);
+    padding: var(--spacing--small) var(--spacing);
+  }
+}
