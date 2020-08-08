@@ -1,0 +1,20 @@
+# Created by trellis-cli v0.9.0
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  abundanthousingma.org:
+    site_hosts:
+    - canonical: abundanthousingma.org
+      redirects:
+      - www.abundanthousingma.org
+    local_path: ../site
+    branch: master
+    repo: git@github.com:example/example.com.git
+    repo_subtree_path: site
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: letsencrypt
+    cache:
+      enabled: false

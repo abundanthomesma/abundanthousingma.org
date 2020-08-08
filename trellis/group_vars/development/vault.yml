@@ -1,0 +1,17 @@
+# Created by trellis-cli v0.9.0
+# Documentation: https://roots.io/trellis/docs/vault/
+
+vault_mysql_root_password: W5Qs74LiPNkbcm2zpF6MvSazLjcHlaojyPyEoR3cDr0b1sTDTibGnskkKwo2sCNd
+vault_wordpress_sites:
+  abundanthousingma.org:
+    admin_password: fycpDAHlNu3wi4qKcrbbu1YkcC19LcUvtR5TxqLl1B9iAmTlJd2INgkrfwIxz4Pz
+    env:
+      db_password: LxfSMRwIWCQlDd1oMc9MXJzrnJQfFe9JM1mqOke8QsQdpzoDoQxOzZaNy6guJo19
+      auth_key: ORyvAuqtdADPFmcOfMycHtKeGa7rFmBDT0kg2PVniY94fIjVs4c4ykethYI2HXtf
+      secure_auth_key: LKkRFSM3XQGgvy8cahSeP60CFPZZ1N3qCedHxW67fZPZU1iUNorQeDVbgObJBdjR
+      logged_in_key: uKqx6NVMusAakwAOPVDLmyF3fgsJzGEzNzaZEbB1VSpIlR2WsXzoJD2ujRmNpMRY
+      nonce_key: oUqJ0suhdHmsHJdp2YRKX3bgRGqpmKNt7hV3hdGbz7iYpMee0bdYm2Vra8VBINbi
+      auth_salt: 9na6FrpsvgzGW3Ibd07EA8Nuf0eEyDRh0HjCrs56wl7uWJZciHVog770KgopssXk
+      secure_auth_salt: YStgtsVPbnbJYx3SeKFl1CR3dcHmFGuuEIaAkdEryZTvmxX4bnx29rcdlJxIrLNt
+      logged_in_salt: WS6Z4ybgTWxqhearaKAQQc2eO7p4qScfeBLjO5MCPmwicB9oxKEh72L0V4nt8hdf
+      nonce_salt: 4rlACe5qM8P7WcFwbTSmdj5fX0y1Iziucbb7REaf73senChyn2KXu8JMMsAdhWEw

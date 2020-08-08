@@ -1,8 +1,0 @@
----
-name: abundanthousingma.org
-recipe: wordpress
-config:
-  php: '7.4'
-  via: nginx
-  webroot: web
-  xdebug: true
