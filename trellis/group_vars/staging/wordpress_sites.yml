@@ -4,12 +4,10 @@
 wordpress_sites:
   abundanthousingma.org:
     site_hosts:
-    - canonical: abundanthousingma.org
-      redirects:
-      - www.abundanthousingma.org
+      - canonical: stage.abundanthousingma.org
     local_path: ../site
-    branch: master
-    repo: git@github.com:example/example.com.git
+    branch: main
+    repo: github.com:abundanthomesma/abundanthousingma.org.git
     repo_subtree_path: site
     multisite:
       enabled: false

@@ -8,8 +8,8 @@ wordpress_sites:
         redirects:
           - www.abundanthousingma.org
     local_path: ../site
-    branch: master
-    repo: git@github.com:example/example.com.git
+    branch: main
+    repo: github.com:abundanthomesma/abundanthousingma.org.git
     repo_subtree_path: site
     multisite:
       enabled: false
