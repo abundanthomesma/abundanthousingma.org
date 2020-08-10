@@ -1,6 +1,6 @@
 
 [production]
-104.131.89.151
+production_host ansible_host=104.131.89.151
 
 [web]
-104.131.89.151
+production_host ansible_host=104.131.89.151
