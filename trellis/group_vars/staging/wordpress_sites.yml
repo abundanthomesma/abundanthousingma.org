@@ -7,7 +7,7 @@ wordpress_sites:
       - canonical: stage.abundanthousingma.org
     local_path: ../site
     branch: official-site
-    repo: github.com:abundanthomesma/abundanthousingma.org.git
+    repo: git@github.com:abundanthomesma/abundanthousingma.org.git
     repo_subtree_path: site
     multisite:
       enabled: false
