@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2f66ed38505dad3d7d6e0d21f32efb9",
+    "content-hash": "d61f1451b94b1309cbabbc45596aebc4",
     "packages": [
         {
             "name": "composer/installers",
@@ -673,6 +673,24 @@
                 }
             ],
             "time": "2020-07-14T19:22:52+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/backwpup",
+            "version": "3.7.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/backwpup/",
+                "reference": "tags/3.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/backwpup.3.7.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/backwpup/"
         },
         {
             "name": "wpackagist-plugin/mailgun",
