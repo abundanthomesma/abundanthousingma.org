@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb38b7917bd32d1085379a58bcf72903",
+    "content-hash": "f91aebd4425028c0cc9d06008dc5e9f6",
     "packages": [
         {
             "name": "composer/installers",
@@ -737,6 +737,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/updraftplus/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-to-buffer",
+            "version": "3.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-to-buffer/",
+                "reference": "tags/3.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-to-buffer.3.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-to-buffer/"
         }
     ],
     "packages-dev": [
