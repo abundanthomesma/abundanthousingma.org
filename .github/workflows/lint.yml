@@ -16,6 +16,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - run: cd site/web/app/themes/abundanthousingma && npm ci
-      - run: cd site/web/app/themes/abundanthousingma && npm run build --if-present
-      - run: cd site/web/app/themes/abundanthousingma && npm test
+      - run: cd site/web/app/themes/abundanthousingma && yarn
+      - run: cd site/web/app/themes/abundanthousingma && yarn build
+      - run: cd site/web/app/themes/abundanthousingma && yarn test
