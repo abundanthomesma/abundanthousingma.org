@@ -53,25 +53,3 @@
     }
   }
 }
-
-.page-header {
-  background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-page-header.jpg");
-  background-size: auto 237px;
-  background-repeat: no-repeat;
-  color: $font-color--contrast;
-  min-height: 237px;
-
-  h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-  }
-
-  .header-signup {
-    background-color: $bg-color--signup;
-
-    h3 {
-      font-family: var(--font-family--contrast);
-      font-weight: var(--font-weight--normal);
-    }
-  }
-}

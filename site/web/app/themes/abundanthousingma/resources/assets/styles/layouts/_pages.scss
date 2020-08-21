@@ -1,31 +1,132 @@
+.main {
+  h2 {
+    color: $action-color;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  h3,
+  p,
+  li {
+    font-size: 1.875rem;
+  }
+
+  ul {
+    list-style-type: initial;
+    padding-left: 2.5rem;
+  }
+
+  > .wp-block-group {
+    padding: 4rem 0;
+
+    > .wp-block-group__inner-container {
+      margin: auto;
+      max-width: $max-width-content;
+    }
+  }
+
+  .wp-block-group-contrast {
+    @include angle(before, true, 4.5deg);
+
+    background-color: $bg-color--alt;
+    color: $font-color--contrast;
+
+    h2 {
+      color: $font-color--base;
+    }
+
+    h3 {
+      font-size: 3.75rem;
+    }
+
+    li {
+      color: $font-color--contrast-alt;
+    }
+  }
+
+  .page-header {
+    background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-page-header.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain 237px;
+    color: $font-color--contrast;
+    display: flex;
+    padding: 4rem 0;
+
+    > .wp-block-group__inner-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: auto;
+      max-width: $max-width-content;
+      padding-bottom: 3rem;
+      padding-top: 0.5rem;
+
+      .page-header__headline {
+        color: $font-color--contrast;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        width: 50%;
+      }
+    }
+  }
+
+  .header-signup {
+    background-color: $bg-color--signup;
+    padding: 0 3rem;
+    width: 50%;
+
+    .mc-embedded-subscribe-form {
+      display: initial;
+    }
+
+    [type="submit"] {
+      margin-left: 0;
+    }
+
+    h3 {
+      font-family: var(--font-family--contrast);
+      font-weight: var(--font-weight--normal);
+    }
+  }
+}
+
+.about {
+  .main {
+    > .wp-block-group-contrast {
+      display: flex;
+      margin-top: 3rem;
+
+      > .wp-block-group__inner-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
 .home {
-  .wp-block-group__inner-container {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: $max-width-content;
+  .wp-block-latest-posts__list {
+    padding-left: 0;
   }
 
   .main {
-    & > .wp-block-group {
+    > .wp-block-group {
       display: flex;
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding: 4rem 0;
 
-      .wp-block-group__inner-container {
+      > .wp-block-group__inner-container {
         display: flex;
         flex-wrap: wrap;
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-
-      h2 {
-        text-transform: uppercase;
+        margin: auto;
+        max-width: $max-width-content;
       }
     }
 
     .a-spot {
-      background-color: $bg-color--alt;
       @include angle(after, true, 2deg);
+
+      background-color: $bg-color--alt;
 
       .wp-block-group__inner-container {
         justify-content: space-between;
@@ -92,10 +193,9 @@
 
     .c-spot {
       background-color: $bg-color--contrast;
-      color: $font-color--contrast;
-      @include angle(before, true, 4.5deg);
 
       h2 {
+        color: $font-color--contrast;
         font-size: 3.75rem;
         order: 2;
       }
@@ -107,7 +207,8 @@
       }
 
       .wp-block-group__inner-container {
-        align-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       .header-group {

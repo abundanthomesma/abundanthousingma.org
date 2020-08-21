@@ -1,15 +1,29 @@
 .footer-site {
+  &::before {
+    background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-home-outlines.svg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: bottom;
+    height: 118.5px;
+    width: 100%;
+    position: absolute;
+    top: -118.5px;
+    content: " ";
+    display: block;
+  }
+
   background-color: $bg-color--footer;
   color: $font-color--contrast;
   font-size: 1.125rem;
+  position: relative;
 
   .wp-block-group__inner-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 118.5px auto 0;
     max-width: $max-width-content;
-    padding: 5.625rem 0;
+    padding: 3rem 0;
   }
 
   // Copyright text
