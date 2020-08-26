@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f91aebd4425028c0cc9d06008dc5e9f6",
+    "content-hash": "5402b8f0170f8eaff844baf7eb171407",
     "packages": [
         {
             "name": "composer/installers",
@@ -755,6 +755,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-to-buffer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-toolbelt",
+            "version": "2.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-toolbelt/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-toolbelt.zip?timestamp=1598048360"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-toolbelt/"
         }
     ],
     "packages-dev": [
