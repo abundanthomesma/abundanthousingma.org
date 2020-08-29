@@ -1,0 +1,10 @@
+.post {
+  margin: auto;
+  max-width: $max-width-content * 0.75;
+
+  h3,
+  p,
+  li {
+    font-size: 1rem;
+  }
+}
