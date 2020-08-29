@@ -224,8 +224,12 @@
     }
 
     .d-spot {
-      background-color: $bg-color--contrast-alt;
       @include angle(after, false, 4.5deg);
+
+      background-color: $bg-color--contrast-alt;
+      // Remove these if/when the .e-spot member orgs element is added back
+      margin-bottom: 237px;
+      padding-bottom: 0;
 
       h2 {
         color: $action-color;
