@@ -12,6 +12,17 @@
   }
 }
 
+.nav a {
+  display: inline-block;
+  padding: 0 var(--spacing--small);
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  &:hover {
+    color: $action-color;
+  }
+}
+
 .nav-primary-extras {
   align-items: right;
   display: flex;
@@ -19,20 +30,17 @@
   justify-content: center;
   margin-top: 0.75rem;
   text-align: right;
+
+  a:hover {
+    color: $action-color;
+  }
 }
 
 .nav {
   display: flex;
 
-  a {
-    display: inline-block;
-    padding: 0 var(--spacing--small);
-    text-transform: uppercase;
-    vertical-align: middle;
-
-    &:hover {
-      color: $action-color;
-    }
+  .active a {
+    color: $action-color--alt;
   }
 
   .menu-donate a {
