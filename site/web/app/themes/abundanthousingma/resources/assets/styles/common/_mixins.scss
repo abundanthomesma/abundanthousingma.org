@@ -77,3 +77,19 @@
     }
   }
 }
+
+@mixin max-width {
+  max-width: 90vw;
+
+  @media only screen and (min-width: 78rem) {
+    max-width: $max-width-content;
+  }
+}
+
+@mixin size-from-interval($interval) {
+  font-size: $interval * 0.75rem;
+
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    font-size: $interval * 1rem;
+  }
+}

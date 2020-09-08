@@ -3,10 +3,8 @@
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin: 1rem 0 2rem;
 
   svg {
-    margin-left: calc(var(--spacing--small) / 2);
     padding: calc(var(--spacing--small) / 2);
     border-radius: var(--border-radius);
     display: block;
@@ -15,6 +13,7 @@
       background-color: $grey-light;
       fill: $bg-color--viewport;
       height: 2.1875rem;
+      margin-left: calc(var(--spacing--small) / 2);
       width: 2.1875rem;
     }
 
@@ -22,8 +21,13 @@
       background-color: $bg-color--footer-contrast;
       fill: $bg-color--footer;
       height: 3.625rem;
+      margin-right: calc(var(--spacing--small) / 2);
       width: 3.625rem;
     }
+  }
+
+  li:last-child svg {
+    margin-right: 0;
   }
 }
 

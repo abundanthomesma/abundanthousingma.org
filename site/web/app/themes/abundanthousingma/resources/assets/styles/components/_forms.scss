@@ -5,11 +5,14 @@
 // TODO: .search-form .search-submit {}
 
 .mc-embedded-subscribe-form {
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   padding: 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
 
   .mc-field-group {
     align-self: stretch;
@@ -39,9 +42,12 @@
   [type="email"] {
     background-color: $bg-color--viewport;
     line-height: 1.625rem;
-    min-width: 18.375rem;
     padding-top: var(--spacing--small);
     padding-bottom: var(--spacing--small);
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      min-width: 18.375rem;
+    }
 
     &::placeholder {
       text-transform: uppercase;
@@ -52,7 +58,12 @@
     font-family: var(--font-family--contrast);
     font-size: 1.625rem;
     font-weight: var(--font-weight--normal);
-    margin-left: var(--spacing--small);
+    margin-top: 1rem;
     padding: var(--spacing--small) var(--spacing);
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      margin-top: 0;
+      margin-left: var(--spacing--small);
+    }
   }
 }

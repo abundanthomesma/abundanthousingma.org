@@ -1,6 +1,26 @@
+.blog {
+  .page-header {
+    @include hide-visually;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      padding: 4rem 0;
+
+      @include hide-visually("unhide");
+    }
+  }
+}
+
 .post {
   margin: auto;
-  max-width: $max-width-content * 0.75;
+  max-width: 90vw;
+
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    max-width: $max-width-content * 0.75;
+  }
+
+  h2 {
+    text-transform: unset;
+  }
 
   h3,
   p,

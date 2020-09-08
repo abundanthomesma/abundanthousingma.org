@@ -1,19 +1,24 @@
 .main {
   h2 {
     color: $action-color;
-    font-size: 3rem;
     text-transform: uppercase;
+
+    @include size-from-interval($major-twelfth);
   }
 
   h3,
   p,
   li {
-    font-size: 1.875rem;
+    @include size-from-interval($major-seventh);
   }
 
   ul {
     list-style-type: initial;
-    padding-left: 2.5rem;
+    padding-left: 1.75rem;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      padding-left: 2.5rem;
+    }
   }
 
   > .wp-block-group {
@@ -21,7 +26,8 @@
 
     > .wp-block-group__inner-container {
       margin: auto;
-      max-width: $max-width-content;
+
+      @include max-width;
     }
   }
 
@@ -36,7 +42,7 @@
     }
 
     h3 {
-      font-size: 3.75rem;
+      @include size-from-interval($major-twelfth * $major-third);
     }
 
     li {
@@ -44,44 +50,25 @@
     }
   }
 
-  .page-header {
-    background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-page-header.jpg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: contain 237px;
-    color: $font-color--contrast;
-    display: flex;
-    padding: 4rem 0;
-
-    > .wp-block-group__inner-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: auto;
-      max-width: $max-width-content;
-      padding-bottom: 3rem;
-      padding-top: 0.5rem;
-
-      .page-header__headline {
-        color: $font-color--contrast;
-        font-size: 2.5rem;
-        margin-top: 1rem;
-        width: 50%;
-      }
-    }
-  }
-
   .header-signup {
     background-color: $bg-color--signup;
-    padding: 0 3rem;
-    width: 50%;
+    padding: 0 1rem;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      padding: 0 3rem;
+      width: 50%;
+    }
 
     .mc-embedded-subscribe-form {
       display: initial;
     }
 
     [type="submit"] {
-      margin-left: 0;
+      margin: 0;
+
+      @media only screen and (max-width: $viewport-breakpoint-large) {
+        width: 100%;
+      }
     }
 
     h3 {
@@ -112,14 +99,21 @@
 
   .main {
     > .wp-block-group {
-      display: flex;
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        display: flex;
+      }
+
       padding: 4rem 0;
 
       > .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap;
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
         margin: auto;
-        max-width: $max-width-content;
+
+        @include max-width;
       }
     }
 
@@ -132,21 +126,24 @@
         justify-content: space-between;
       }
 
-      .header-group {
-        width: 33%;
-      }
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        .header-group {
+          width: 33%;
+        }
 
-      .wp-block-embed {
-        width: 66%;
+        .wp-block-embed {
+          width: 66%;
+        }
       }
 
       h2 {
         color: $font-color--contrast;
-        font-size: 3.75rem;
+
+        @include size-from-interval($major-twelfth * $major-third);
       }
 
       .wp-block-button__link {
-        font-size: 2rem;
+        @include size-from-interval($octave);
       }
     }
 
@@ -160,18 +157,20 @@
         margin-top: 2rem;
         margin-bottom: 15rem;
 
-        > * {
-          width: 75%;
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          > * {
+            width: 75%;
+          }
         }
       }
 
       h2 {
         color: $action-color;
-        font-size: 2rem;
+        @include size-from-interval($octave);
       }
 
       p {
-        font-size: 1.5rem;
+        @include size-from-interval($perfect-fifth);
       }
 
       .mc-embedded-subscribe-form {
@@ -183,7 +182,7 @@
       }
 
       [type="submit"] {
-        font-size: 1.625rem;
+        @include size-from-interval($golden);
 
         &:hover {
           background-color: $action-color--alt;
@@ -196,30 +195,36 @@
 
       h2 {
         color: $font-color--contrast;
-        font-size: 3.75rem;
         order: 2;
+
+        @include size-from-interval($major-twelfth * $major-third);
       }
 
       h3 {
         font-family: var(--font-family--contrast);
-        font-size: 3rem;
         order: 3;
+
+        @include size-from-interval($major-twelfth);
       }
 
       .wp-block-group__inner-container {
-        display: flex;
-        flex-wrap: wrap;
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
 
-      .header-group {
-        order: 2;
-        width: 50%;
-        margin-left: 10%;
-      }
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        .header-group {
+          order: 2;
+          width: 50%;
+          margin-left: 10%;
+        }
 
-      .wp-block-embed {
-        order: 1;
-        width: 40%;
+        .wp-block-embed {
+          order: 1;
+          width: 40%;
+        }
       }
     }
 
@@ -233,15 +238,17 @@
 
       h2 {
         color: $action-color;
-        font-size: 3rem;
+
+        @include size-from-interval($major-twelfth);
       }
 
       .wp-block-latest-posts a {
         color: $font-color--base;
         font-family: var(--font-family--contrast);
-        font-size: 4rem;
         line-height: 1.15;
         text-decoration: none;
+
+        @include size-from-interval($double-octave);
       }
 
       .wp-block-buttons {
@@ -252,7 +259,8 @@
         background-color: $font-color--base;
         color: $font-color--contrast;
         font-family: var(--font-family--contrast);
-        font-size: 1.4244rem;
+
+        @include size-from-interval($perfect-fifth);
 
         &:hover {
           background-color: $action-color;
@@ -260,8 +268,14 @@
       }
 
       .wp-block-latest-posts__featured-image.alignright {
-        margin-left: 1rem;
-        max-width: 33%;
+        @media only screen and (max-width: $viewport-breakpoint-large) {
+          margin-left: 0;
+        }
+
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          margin-left: 1rem;
+          max-width: 33%;
+        }
       }
     }
 
@@ -279,11 +293,12 @@
 
       h2 {
         color: $action-color;
-        font-size: 3rem;
+
+        @include size-from-interval($major-twelfth);
       }
 
       p {
-        font-size: 1.5rem;
+        @include size-from-interval($perfect-fifth);
       }
     }
   }

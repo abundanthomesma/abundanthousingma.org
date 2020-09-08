@@ -22,8 +22,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 118.5px auto 0;
-    max-width: $max-width-content;
     padding: 3rem 0;
+
+    @include max-width;
   }
 
   // Copyright text
@@ -33,6 +34,14 @@
 
   // Mailchimp signup form in footer
   .footer-signup {
+    @media only screen and (max-width: $viewport-breakpoint-large) {
+      width: 100%;
+    }
+
+    .mc-embedded-subscribe-form {
+      padding-left: 0;
+    }
+
     [type="email"]::placeholder {
       font-family: var(--font-family--contrast);
       font-size: 1.5rem;
