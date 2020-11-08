@@ -39,7 +39,7 @@
     "roots/wordpress": "^5.5",
     "roots/wp-config": "^1.0",
     "roots/wp-password-bcrypt": "^1.0",
-    "roots/soil": "^3.9",
+    "roots/soil": "^4.0",
     "wpackagist-plugin/mailgun": "^1.7",
     "viper007bond/regenerate-thumbnails": "^3.1",
     "wpackagist-plugin/backwpup": "^3.7",
