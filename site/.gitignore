@@ -21,7 +21,7 @@ web/app/et-cache
 !.env.example
 
 # Composer
-vendor/
+/vendor
 
 # WP-CLI
 wp-cli.local.yml
