@@ -1,6 +1,6 @@
 <header class="page-header wp-block-group">
   <div class="wp-block-group__inner-container">
-    <h2 class="page-header__headline">Let’s end the housing shortage in MA together</h2>
+    <h2 class="page-header__headline">Let’s build more abundant housing in MA together</h2>
 
     <div class="header-signup">
       <!-- Begin Mailchimp Signup Form -->
