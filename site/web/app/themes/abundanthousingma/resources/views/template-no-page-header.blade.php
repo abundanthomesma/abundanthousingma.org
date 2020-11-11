@@ -1,5 +1,5 @@
 {{--
-  Template Name: Home
+  Template Name: No Page Header
 --}}
 
 @extends('layouts.app')
