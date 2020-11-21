@@ -1,3 +1,17 @@
+### HEAD
+* Validate that `letsencrypt_contact_emails` is a list ([#1250](https://github.com/roots/trellis/pull/1250))
+
+### 1.7.0: November 9th, 2020
+* Officially support Ubuntu 20.04 (and default Vagrant to it) ([#1197](https://github.com/roots/trellis/pull/1197))
+
+### 1.6.0: November 5th, 2020
+* Remove prestissimo for Composer 2.0 support ([#1247](https://github.com/roots/trellis/pull/1247))
+* Allow WP cron intervals to be configurable ([#1222](https://github.com/roots/trellis/pull/1222))
+* Remove default Vagrant SMB credentials ([#1215](https://github.com/roots/trellis/pull/1215))
+* Fix usage of `ANSIBLE_CONFIG` env var ([#1217](https://github.com/roots/trellis/pull/1217))
+* Update MariaDB package to 10.5 ([#1212](https://github.com/roots/trellis/pull/1212))
+* Switch to official Nginx Ubuntu package ([#1208](https://github.com/roots/trellis/pull/1208))
+
 ### 1.5.0: August 5th, 2020
 * Improve Nginx reloading for failed Let's Encrypt certificates ([#1207](https://github.com/roots/trellis/pull/1207))
 * Add support for Lets Encrypt contact emails ([#1206](https://github.com/roots/trellis/pull/1206))
