@@ -83,6 +83,7 @@ $font-stack-verdana: (
 ///     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 ///   }
 
+/* stylelint-disable value-keyword-case */
 $font-stack-system: (
   system-ui,
   -apple-system,
@@ -105,6 +106,7 @@ $font-stack-system: (
   "Liberation Sans",
   sans-serif,
 );
+/* stylelint-enable value-keyword-case */
 
 /// A variable that outputs a Garamond font stack.
 ///
