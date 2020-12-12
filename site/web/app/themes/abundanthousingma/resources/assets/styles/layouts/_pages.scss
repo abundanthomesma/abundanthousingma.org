@@ -90,6 +90,15 @@
       }
     }
   }
+
+  .wp-block-media-text {
+    margin-bottom: var(--spacing);
+    min-height: 300px;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      min-height: 400px;
+    }
+  }
 }
 
 .home {
