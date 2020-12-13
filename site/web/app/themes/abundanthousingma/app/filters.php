@@ -30,7 +30,7 @@ add_filter('body_class', function (array $classes) {
  * Add "Learn more" button to the excerpt
  */
 add_filter('excerpt_more', function () {
-    return '<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link" href="' . get_permalink() . '">' . __('Learn more', 'sage') . '</a></div></div>';
+    return '…<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link" href="' . get_permalink() . '">' . __('Learn more', 'sage') . '</a></div></div>';
 });
 
 /**
