@@ -69,6 +69,10 @@
       @media only screen and (max-width: $viewport-breakpoint-large) {
         width: 100%;
       }
+
+      &:hover {
+        background-color: $action-color--alt;
+      }
     }
 
     h3 {
