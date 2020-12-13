@@ -16,6 +16,7 @@ php_extensions_default:
 
 php_extensions_custom:
   php-imagick: "{{ apt_package_state }}"
+  php-intl: "{{ apt_package_state }}"
 
 php_extensions: "{{ php_extensions_default | combine(php_extensions_custom) }}"
 
