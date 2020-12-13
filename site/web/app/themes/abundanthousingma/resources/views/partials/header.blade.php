@@ -13,3 +13,7 @@
     @endif
   </nav>
 </header>
+
+@if (!is_front_page())
+  @include('partials.page-header')
+@endif

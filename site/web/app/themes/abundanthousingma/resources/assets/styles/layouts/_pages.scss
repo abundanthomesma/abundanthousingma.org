@@ -49,37 +49,6 @@
       color: $font-color--contrast-alt;
     }
   }
-
-  .header-signup {
-    background-color: $bg-color--signup;
-    padding: 0 1rem;
-
-    @media only screen and (min-width: $viewport-breakpoint-large) {
-      padding: 0 3rem;
-      width: 50%;
-    }
-
-    .mc-embedded-subscribe-form {
-      display: initial;
-    }
-
-    [type="submit"] {
-      margin: 0;
-
-      @media only screen and (max-width: $viewport-breakpoint-large) {
-        width: 100%;
-      }
-
-      &:hover {
-        background-color: $action-color--alt;
-      }
-    }
-
-    h3 {
-      font-family: var(--font-family--contrast);
-      font-weight: var(--font-weight--normal);
-    }
-  }
 }
 
 .about {
