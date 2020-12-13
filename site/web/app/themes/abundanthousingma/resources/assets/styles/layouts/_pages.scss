@@ -285,3 +285,16 @@
     }
   }
 }
+
+.page-template-default,
+.blog,
+.search {
+  .main {
+    margin: auto;
+    max-width: 90vw;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      max-width: $max-width-content * 0.75;
+    }
+  }
+}
