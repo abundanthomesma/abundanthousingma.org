@@ -1,4 +1,5 @@
-.blog {
+.blog,
+.single {
   .page-header {
     @include hide-visually;
 
@@ -8,11 +9,19 @@
       @include hide-visually("unhide");
     }
   }
+
+  .footer-site {
+    margin-top: calc(118.5px + var(--spacing));
+  }
 }
 
 .post {
   margin: auto;
   max-width: 90vw;
+
+  .blog & {
+    margin-bottom: var(--spacing);
+  }
 
   @media only screen and (min-width: $viewport-breakpoint-large) {
     max-width: $max-width-content * 0.75;
@@ -27,4 +36,11 @@
   li {
     font-size: 1rem;
   }
+}
+
+.entry-title {
+  color: $action-color;
+  text-transform: uppercase;
+
+  @include size-from-interval($major-twelfth);
 }
