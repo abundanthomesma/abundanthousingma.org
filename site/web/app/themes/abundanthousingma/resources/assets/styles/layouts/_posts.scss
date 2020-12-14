@@ -1,4 +1,7 @@
 .blog,
+.error404,
+.page-template-default,
+.search,
 .single {
   .page-header {
     @include hide-visually;
@@ -10,6 +13,10 @@
     }
   }
 
+  .main {
+    margin-bottom: var(--spacing);
+  }
+
   .footer-site {
     margin-top: calc(118.5px + var(--spacing));
   }
@@ -18,10 +25,6 @@
 .post {
   margin: auto;
   max-width: 90vw;
-
-  .blog & {
-    margin-bottom: var(--spacing);
-  }
 
   @media only screen and (min-width: $viewport-breakpoint-large) {
     max-width: $max-width-content * 0.75;
