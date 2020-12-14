@@ -1,5 +1,7 @@
 # {{ ansible_managed }}
 
+{{ admin_user }} ALL=(ALL) NOPASSWD:ALL
+
 {% for service in web_sudoers %}
 {{ web_user }} ALL=(root) NOPASSWD: {{ service }}
 {% endfor %}
