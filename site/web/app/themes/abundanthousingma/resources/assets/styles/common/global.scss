@@ -1,0 +1,18 @@
+/**
+ * Global
+ */
+
+/**
+ * Block editor color palette utilities
+ * @see https://git.io/JeyD6
+ */
+
+@each $color-name, $color-value in $theme-colors {
+  .has-#{$color-name}-color {
+    color: $color-value;
+  }
+
+  .has-#{$color-name}-background-color {
+    background-color: $color-value;
+  }
+}

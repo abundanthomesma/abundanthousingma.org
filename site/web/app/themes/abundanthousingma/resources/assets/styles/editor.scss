@@ -1,0 +1,24 @@
+/**
+ * Editor
+ */
+
+@import 'config/variables';
+@import 'config/external';
+
+@import 'common/mixins';
+
+.editor-styles-wrapper > * {
+  @import 'common/global';
+
+  /** Components */
+  @import 'components';
+
+  /** Partials */
+  @import 'partials/header';
+  @import 'partials/sidebar';
+  @import 'partials/footer';
+  @import 'partials/pages';
+  @import 'partials/posts';
+
+  font-family: $font-family-base;
+}

@@ -1,0 +1,169 @@
+/**
+ * Header
+ */
+
+.brand {
+  font-weight: bold;
+}
+
+.banner {
+  @media only screen and (min-width: $viewport-breakpoint-small) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  margin: 3rem auto 4rem;
+
+  @include max-width;
+
+  a {
+    color: $font-color--base;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0 var(--spacing--small);
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  &:hover {
+    color: $action-color;
+  }
+}
+
+.nav-primary-extras {
+  align-items: right;
+
+  @include hide-visually;
+
+  @media only screen and (min-width: $viewport-breakpoint-small) {
+    display: flex;
+  }
+
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+
+    @include hide-visually("unhide");
+  }
+
+  margin-top: 0.75rem;
+  margin-right: 1rem;
+  text-align: right;
+
+  a:hover {
+    color: $action-color;
+  }
+
+  .social {
+    margin: 1rem 0 2rem;
+  }
+}
+
+.nav {
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    display: flex;
+    text-align: left;
+  }
+
+  text-align: right;
+
+  .active a {
+    color: $action-color--alt;
+  }
+
+  .menu-donate a {
+    background-color: $action-color;
+    color: $action-color--contrast;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--duration) var(--timing);
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $action-color--alt;
+    }
+
+    &:focus {
+      outline: var(--focus-outline);
+      outline-offset: var(--focus-outline-offset);
+    }
+  }
+}
+
+.page-header {
+  background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-page-header.jpg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain 237px;
+  color: $font-color--contrast;
+  padding: 0;
+
+  @media only screen and (min-width: $viewport-breakpoint-large) {
+    background-position: bottom center;
+    display: flex;
+    padding: 4rem 0;
+  }
+
+  > .wp-block-group__inner-container {
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    margin: auto;
+    padding-bottom: 3rem;
+    padding-top: 0.5rem;
+
+    @include max-width;
+
+    .page-header__headline {
+      color: $font-color--contrast;
+      margin-top: 1rem;
+      text-transform: uppercase;
+
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        width: 50%;
+      }
+
+      @include size-from-interval($major-tenth);
+    }
+  }
+
+  .header-signup {
+    background-color: $bg-color--signup;
+    padding: 0 1rem;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      padding: 0 3rem;
+      width: 50%;
+    }
+
+    .mc-embedded-subscribe-form {
+      display: initial;
+    }
+
+    [type="submit"] {
+      margin: 0;
+
+      @media only screen and (max-width: $viewport-breakpoint-large) {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: $action-color--alt;
+      }
+    }
+
+    h3 {
+      font-family: var(--font-family--contrast);
+      font-weight: var(--font-weight--normal);
+    }
+  }
+}

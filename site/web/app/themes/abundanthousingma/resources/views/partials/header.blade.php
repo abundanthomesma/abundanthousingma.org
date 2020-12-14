@@ -1,5 +1,7 @@
 <header class="banner">
-  <a class="brand" href="{{ home_url('/') }}"><img src="/app/themes/abundanthousingma/resources/assets/images/ahma-logo.svg" alt="Abundant Housing MA logo" title="{{ get_bloginfo('name', 'display') }}"></a>
+  <a class="brand" href="{{ home_url('/') }}">
+    <img src="/app/themes/abundanthousingma/resources/assets/images/ahma-logo.svg" alt="Abundant Housing MA logo" title="{{ $siteName }}">
+  </a>
 
   <nav class="nav-primary">
     <div class="nav-primary-extras">
