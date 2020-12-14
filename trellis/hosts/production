@@ -1,0 +1,6 @@
+
+[production]
+production_host ansible_host=159.203.150.31
+
+[web]
+production_host ansible_host=159.203.150.31

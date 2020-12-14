@@ -1,0 +1,18 @@
+# Created by trellis-cli v0.9.0
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  abundanthousingma.org:
+    site_hosts:
+      - canonical: abundanthousingma.test
+        redirects:
+          - www.abundanthousingma.test
+    local_path: ../site
+    admin_email: jeff@abundanthousingma.org
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false

@@ -1,0 +1,20 @@
+# Documentation: https://roots.io/trellis/docs/ssh-keys/
+admin_user: jeffbyrnes
+
+# Also define 'vault_users' (`group_vars/staging/vault.yml`, `group_vars/production/vault.yml`)
+users:
+  - name: "{{ web_user }}"
+    groups:
+      - "{{ web_group }}"
+    keys:
+      - https://github.com/jeffbyrnes.keys
+  - name: "{{ admin_user }}"
+    groups:
+      - sudo
+    keys:
+      - https://github.com/jeffbyrnes.keys
+
+web_user: web
+web_group: www-data
+web_sudoers:
+  - "/usr/sbin/service php7.4-fpm *"

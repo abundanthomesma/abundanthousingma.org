@@ -1,0 +1,55 @@
+.footer-site {
+  &::before {
+    background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-home-outlines.svg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: bottom;
+    height: 118.5px;
+    width: 100%;
+    position: absolute;
+    top: -118.5px;
+    content: " ";
+    display: block;
+  }
+
+  background-color: $bg-color--footer;
+  color: $font-color--contrast;
+  font-size: 1.125rem;
+  position: relative;
+
+  .wp-block-group__inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 118.5px auto 0;
+    padding: 3rem 0;
+
+    @include max-width;
+  }
+
+  // Copyright text
+  .footer-copyright-name {
+    font-size: 1.3125rem;
+  }
+
+  // Mailchimp signup form in footer
+  .footer-signup {
+    @media only screen and (max-width: $viewport-breakpoint-large) {
+      width: 100%;
+    }
+
+    .mc-embedded-subscribe-form {
+      padding-left: 0;
+    }
+
+    [type="email"]::placeholder {
+      font-family: var(--font-family--contrast);
+      font-size: 1.5rem;
+      text-transform: none;
+    }
+
+    [type="submit"] {
+      font-size: 1.625rem;
+    }
+  }
+}

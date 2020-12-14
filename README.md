@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# abundanthousingma.org
 
-You can use the [editor on GitHub](https://github.com/abundanthomesma/abundanthomesma.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+All-in-one development stack, provisioning playbooks, theme development, and deployment mechanisms for the [Abundant Housing MA website](https://abundanthousingma.org).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We make use of [Trellis](https://roots.io/trellis/) (local & public server provisioning), [Bedrock](https://roots.io/bedrock/) (WordPress boilerplate), and [Sage](https://roots.io/sage/) (WordPress starter theme) to make things really shine.
 
-### Markdown
+## Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Make sure all dependencies have been installed before moving on:
 
-```markdown
-Syntax highlighted code block
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads) >= 4.3.10
+- [Vagrant](https://www.vagrantup.com/downloads.html) = 2.1.0
+- [trellis-cli](https://github.com/roots/trellis-cli)
 
-# Header 1
-## Header 2
-### Header 3
+**Windows user?** [Read the Windows getting started docs](https://roots.io/docs/getting-started/windows/#working-with-trellis) for slightly different installation instructions.
 
-- Bulleted
-- List
+## Local development setup
 
-1. Numbered
-2. List
+All commands below are meant to be run from the `trellis/` directory.
 
-**Bold** and _Italic_ and `Code` text
+### Using trellis-cli
 
-[Link](url) and ![Image](src)
+1. Review the automatically created site in `group_vars/development/wordpress_sites.yml`
+2. Customize settings if necessary
+
+Start the Vagrant virtual machine:
+
+```bash
+trellis up
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Deploying to remote servers
 
-### Jekyll Themes
+### Using trellis-cli
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abundanthomesma/abundanthomesma.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+For `<environment>`, the available values are:
 
-### Support or Contact
+* `staging`
+* `production`
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Deploy a site:
+
+```bash
+trellis deploy <environment> abundanthousingma.org
+```
+
+Rollback a deploy:
+
+```bash
+trellis rollback <environment> abundanthousingma.org
+```

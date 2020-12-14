@@ -1,0 +1,301 @@
+.main {
+  h2 {
+    color: $action-color;
+    text-transform: uppercase;
+
+    @include size-from-interval($major-twelfth);
+  }
+
+  h3,
+  p,
+  li {
+    @include size-from-interval($major-seventh);
+  }
+
+  ul {
+    list-style-type: initial;
+    padding-left: 1.75rem;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      padding-left: 2.5rem;
+    }
+  }
+
+  > .wp-block-group {
+    padding: 4rem 0;
+
+    > .wp-block-group__inner-container {
+      margin: auto;
+
+      @include max-width;
+    }
+  }
+
+  .wp-block-group-contrast {
+    @include angle(before, true, 4.5deg);
+
+    background-color: $bg-color--alt;
+    color: $font-color--contrast;
+
+    h2 {
+      color: $font-color--base;
+    }
+
+    h3 {
+      @include size-from-interval($major-twelfth * $major-third);
+    }
+
+    li {
+      color: $font-color--contrast-alt;
+    }
+  }
+}
+
+.about {
+  .main {
+    > .wp-block-group-contrast {
+      display: flex;
+      margin-top: 3rem;
+
+      > .wp-block-group__inner-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .wp-block-media-text {
+    margin-bottom: var(--spacing);
+    min-height: 300px;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      min-height: 400px;
+    }
+  }
+}
+
+.home {
+  .wp-block-latest-posts__list {
+    padding-left: 0;
+  }
+
+  .main {
+    > .wp-block-group {
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        display: flex;
+      }
+
+      padding: 4rem 0;
+
+      > .wp-block-group__inner-container {
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        margin: auto;
+
+        @include max-width;
+      }
+    }
+
+    .a-spot {
+      @include angle(after, true, 2deg);
+
+      background-color: $bg-color--alt;
+
+      .wp-block-group__inner-container {
+        justify-content: space-between;
+      }
+
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        .header-group {
+          width: 33%;
+        }
+
+        .wp-block-embed {
+          width: 66%;
+        }
+      }
+
+      h2 {
+        color: $font-color--contrast;
+
+        @include size-from-interval($major-twelfth * $major-third);
+      }
+
+      .wp-block-button__link {
+        @include size-from-interval($octave);
+      }
+    }
+
+    .b-spot {
+      background-image: url("/app/themes/abundanthousingma/resources/assets/images/bg-home-outlines.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
+
+      .wp-block-group__inner-container {
+        align-content: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          > * {
+            width: 75%;
+          }
+        }
+      }
+
+      h2 {
+        color: $action-color;
+        @include size-from-interval($octave);
+      }
+
+      p {
+        @include size-from-interval($perfect-fifth);
+      }
+
+      .mc-embedded-subscribe-form {
+        background-color: $bg-color--signup;
+      }
+
+      [type="email"]::placeholder {
+        text-transform: uppercase;
+      }
+
+      [type="submit"] {
+        @include size-from-interval($golden);
+
+        &:hover {
+          background-color: $action-color--alt;
+        }
+      }
+    }
+
+    .c-spot {
+      background-color: $bg-color--contrast;
+
+      h2 {
+        color: $font-color--contrast;
+        order: 2;
+
+        @include size-from-interval($major-twelfth * $major-third);
+      }
+
+      h3 {
+        font-family: var(--font-family--contrast);
+        order: 3;
+
+        @include size-from-interval($major-twelfth);
+      }
+
+      .wp-block-group__inner-container {
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      @media only screen and (min-width: $viewport-breakpoint-large) {
+        .header-group {
+          order: 2;
+          width: 50%;
+          margin-left: 10%;
+        }
+
+        .wp-block-embed {
+          order: 1;
+          width: 40%;
+        }
+      }
+    }
+
+    .d-spot {
+      @include angle(after, false, 4.5deg);
+
+      background-color: $bg-color--contrast-alt;
+      // Remove these if/when the .e-spot member orgs element is added back
+      margin-bottom: 237px;
+      padding-bottom: 0;
+
+      h2 {
+        color: $action-color;
+
+        @include size-from-interval($major-twelfth);
+      }
+
+      .wp-block-latest-posts a {
+        color: $font-color--base;
+        font-family: var(--font-family--contrast);
+        line-height: 1.15;
+        text-decoration: none;
+
+        @include size-from-interval($double-octave);
+      }
+
+      .wp-block-buttons {
+        margin-top: 1rem;
+      }
+
+      a.wp-block-button__link {
+        background-color: $font-color--base;
+        color: $font-color--contrast;
+        font-family: var(--font-family--contrast);
+
+        @include size-from-interval($perfect-fifth);
+
+        &:hover {
+          background-color: $action-color;
+        }
+      }
+
+      .wp-block-latest-posts__featured-image.alignright {
+        @media only screen and (max-width: $viewport-breakpoint-large) {
+          margin-left: 0;
+        }
+
+        @media only screen and (min-width: $viewport-breakpoint-large) {
+          margin-left: 1rem;
+          max-width: 33%;
+        }
+      }
+    }
+
+    .e-spot {
+      padding-top: 8rem;
+
+      .wp-block-gallery {
+        width: 60%;
+      }
+
+      .wp-block-group {
+        margin-left: 5%;
+        max-width: 35%;
+      }
+
+      h2 {
+        color: $action-color;
+
+        @include size-from-interval($major-twelfth);
+      }
+
+      p {
+        @include size-from-interval($perfect-fifth);
+      }
+    }
+  }
+}
+
+.page-template-default,
+.blog,
+.error404,
+.search {
+  .main {
+    margin: auto;
+    max-width: 90vw;
+
+    @media only screen and (min-width: $viewport-breakpoint-large) {
+      max-width: $max-width-content * 0.75;
+    }
+  }
+}
