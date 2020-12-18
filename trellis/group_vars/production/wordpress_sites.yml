@@ -1,6 +1,6 @@
+---
 # Created by trellis-cli v0.9.0
 # Documentation: https://roots.io/trellis/docs/wordpress-sites/
-
 wordpress_sites:
   abundanthousingma.org:
     site_hosts:
@@ -15,6 +15,11 @@ wordpress_sites:
       enabled: false
     ssl:
       enabled: true
-      provider: letsencrypt
+      stapling_enabled: false
+      provider: cloudflare-origin-ca
     cache:
       enabled: false
+    cloudflare-origin-ca:
+      hostnames:
+        - abundanthousingma.org
+        - '*.abundanthousingma.org'

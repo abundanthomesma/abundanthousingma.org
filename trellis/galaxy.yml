@@ -17,3 +17,6 @@
 - name: mailhog
   src: geerlingguy.mailhog
   version: 2.2.0
+
+- src: TypistTech.trellis-cloudflare-origin-ca
+  version: 0.8.0
