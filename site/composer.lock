@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e13a08af99b9bf613e08c61e6d29c8b",
+    "content-hash": "d2b344a601ebcc15c5b2abe5bdf08bc1",
     "packages": [
         {
             "name": "automattic/jetpack",
@@ -994,6 +994,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/backwpup/"
+        },
+        {
+            "name": "wpackagist-plugin/cloudflare",
+            "version": "3.8.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cloudflare/",
+                "reference": "tags/3.8.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.3.8.7.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cloudflare/"
         },
         {
             "name": "wpackagist-plugin/mailgun",
