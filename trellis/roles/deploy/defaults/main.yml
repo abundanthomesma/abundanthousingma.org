@@ -29,8 +29,8 @@ project_templates:
 # project_shared_children:
 #   - path: app/sessions
 #     src: sessions
-#     mode: '0755'        // <- optional, must be quoted, defaults to `'0755'` if `directory` or `'0644'` if `file`
-#     type: directory     // <- optional, defaults to `directory`, options: `directory` or `file`
+#     mode: '0755'      // <- optional, use an octal number starting with 0 or quote it, defaults to `'0755'` if `directory` or `'0644'` if `file`
+#     type: directory // <- optional, defaults to `directory`, options: `directory` or `file`
 project_shared_children:
   - path: web/app/uploads
     src: uploads

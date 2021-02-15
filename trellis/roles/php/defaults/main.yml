@@ -7,6 +7,7 @@ php_extensions_default:
   php7.4-curl: "{{ apt_package_state }}"
   php7.4-dev: "{{ apt_package_state }}"
   php7.4-fpm: "{{ apt_package_state }}"
+  php7.4-gd: "{{ apt_package_state }}"
   php7.4-mbstring: "{{ apt_package_state }}"
   php7.4-mysql: "{{ apt_package_state }}"
   php7.4-opcache: "{{ apt_package_state }}"
@@ -14,10 +15,7 @@ php_extensions_default:
   php7.4-xmlrpc: "{{ apt_package_state }}"
   php7.4-zip: "{{ apt_package_state }}"
 
-php_extensions_custom:
-  php-imagick: "{{ apt_package_state }}"
-  php-intl: "{{ apt_package_state }}"
-
+php_extensions_custom: {}
 php_extensions: "{{ php_extensions_default | combine(php_extensions_custom) }}"
 
 php_error_reporting: 'E_ALL & ~E_DEPRECATED & ~E_STRICT'
@@ -34,7 +32,6 @@ php_session_save_path: /tmp
 php_session_cookie_httponly: 'On'
 php_session_cookie_secure: 'Off'
 php_upload_max_filesize: 25M
-php_track_errors: 'Off'
 php_timezone: '{{ ntp_timezone }}'
 php_output_buffering: 'Off'
 

@@ -46,12 +46,14 @@
   copy:
     src: "{{ letsencrypt_account_key_source_file }}"
     dest: "{{ letsencrypt_account_key }}"
+    mode: '0700'
   when: letsencrypt_account_key_source_file is defined
 
 - name: Copy Lets Encrypt account key source contents
   copy:
     content: "{{ letsencrypt_account_key_source_content | trim }}"
     dest: "{{ letsencrypt_account_key }}"
+    mode: '0700'
   when: letsencrypt_account_key_source_content is defined
 
 - name: Generate a new account key
