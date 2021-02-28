@@ -3,7 +3,7 @@
 
   <nav class="nav-primary">
     <div class="nav-primary-extras">
-      <a href="/login" title="Member Login">Member Login</a>
+      <a href="/become-a-member" title="Become A Member">Become A Member</a>
 
       @include('partials.social-icons')
     </div>
