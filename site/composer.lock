@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "269686baeafadc84769e2fac3dab0a5c",
+    "content-hash": "cc1e5edd304014e3df196b8c7fe134af",
     "packages": [
         {
             "name": "automattic/jetpack",
@@ -1361,6 +1361,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/mailgun/"
+        },
+        {
+            "name": "wpackagist-plugin/tabs-block",
+            "version": "1.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/tabs-block/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/tabs-block.zip?timestamp=1608425304"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/tabs-block/"
         },
         {
             "name": "wpackagist-plugin/updraftplus",
