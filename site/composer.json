@@ -113,7 +113,8 @@
     "junaidbhura/gravityformshubspot": "*",
     "junaidbhura/gravityformsmailgun": "*",
     "junaidbhura/gravityformsstripe": "*",
-    "wpackagist-plugin/tabs-block": "^1.0"
+    "wpackagist-plugin/tabs-block": "^1.0",
+    "wpackagist-plugin/gravityformscli": "^1.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
