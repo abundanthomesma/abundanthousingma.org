@@ -29,8 +29,6 @@
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
-    // README: The below is a hack to install Gravity Forms premium plugins
-    //          See https://github.com/junaidbhura/composer-wp-pro-plugins for details
     {
       "type": "package",
       "package": {
