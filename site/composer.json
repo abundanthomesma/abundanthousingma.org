@@ -114,7 +114,8 @@
     "junaidbhura/gravityformsmailgun": "*",
     "junaidbhura/gravityformsstripe": "*",
     "wpackagist-plugin/gravityformscli": "^1.4",
-    "wpackagist-plugin/kioken-blocks": "*"
+    "wpackagist-plugin/kioken-blocks": "*",
+    "wpackagist-plugin/csp-manager": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
