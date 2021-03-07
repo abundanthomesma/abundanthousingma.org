@@ -31,14 +31,5 @@ module.exports = {
         ],
       },
     ],
-    'property-no-unknown': [
-      true,
-      {
-        'ignoreProperties': [
-          // Valid CSS, but not yet known by Stylelint
-          'text-decoration-skip-ink',
-        ],
-      },
-    ],
   },
 };
