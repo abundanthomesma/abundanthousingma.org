@@ -89,3 +89,73 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+ * Add or update a WordPress user with their Stripe Customer ID
+ */
+add_action('gform_stripe_customer_after_create', function ($customer, $feed, $entry, $form) {
+    // README: Loop over all the fields of the form, and collect the field IDs
+    //          of the entry values we want.
+    foreach ($form['fields'] as $field) {
+        if ($field->type == 'name') {
+            // README: The Gravity Forms docs show in multiple places that
+            //          the decimal values here are hard-coded, so we'll go with it.
+            $first_name_field_id = "{$field->id}.3";
+            $last_name_field_id  = "{$field->id}.6";
+        }
+
+        if ($field->type == 'email') {
+            $email_field_id = $field->id;
+        }
+    }
+
+    $first_name = rgar($entry, $first_name_field_id);
+    $last_name  = rgar($entry, $last_name_field_id);
+    $user_email = rgar($entry, $email_field_id);
+    $user_id    = email_exists($user_email);
+
+    // README: If the user does not exist, we generate a password & use that to create one.
+    //          While usernames cannot be changed, it is possible to register oneself with
+    //          something else as your username, so we key off email as globally unique ID.
+    if (!$user_id) {
+        $random_password = wp_generate_password($length = 12, $include_standard_special_chars = true);
+        $userdata = array(
+            'first_name' => $first_name,
+            'last_name'  => $last_name,
+            'role'       => 'subscriber',
+            'user_email' => $user_email,
+            'user_login' => $user_email,
+            'user_pass'  => $random_password,
+        );
+
+        $user_id = wp_insert_user($userdata);
+    }
+
+    update_user_meta($user_id, 'ahma_stripe_customer_id', $customer->id);
+}, 10, 4);
+
+/**
+ * Get current Stripe Customer ID to change billing.
+ * Test if user has a customer ID, and return that to update it.
+ */
+add_filter('gform_stripe_customer_id', function ($customer_id, $feed, $entry, $form) {
+    // README: Loop over all the fields of the form, and collect the field IDs
+    //          of the entry values we want.
+    foreach ($form['fields'] as $field) {
+        if ($field->type == 'email') {
+            $email_field_id = $field->id;
+        }
+    }
+
+    $user_email = rgar($entry, $email_field_id);
+    $user_id    = email_exists($user_email);
+
+    if ($user_id) {
+        // README: If the meta value does not exist it returns an empty string with the
+        //          last parameter, $single, set to true
+        //          http://developer.wordpress.org/reference/functions/get_user_meta/
+        $customer_id = get_user_meta($user_id, 'ahma_stripe_customer_id', true);
+    }
+
+    return $customer_id;
+}, 10, 4);
