@@ -1,6 +1,6 @@
+---
 # Created by trellis-cli v0.9.0
 # Documentation: https://roots.io/trellis/docs/wordpress-sites/
-
 wordpress_sites:
   abundanthousingma.org:
     site_hosts:
@@ -12,7 +12,8 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: false
+      enabled: true
       provider: self-signed
+      hsts_max_age: 0
     cache:
       enabled: false
