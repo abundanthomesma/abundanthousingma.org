@@ -8,6 +8,7 @@ wordpress_sites:
         redirects:
           - www.abundanthousingma.org
     local_path: ../site
+    admin_email: info@abundanthousingma.org
     branch: main
     repo: git@github.com:abundanthomesma/abundanthousingma.org.git
     repo_subtree_path: site
