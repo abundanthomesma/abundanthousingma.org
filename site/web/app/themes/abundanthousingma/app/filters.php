@@ -159,3 +159,17 @@ add_filter('gform_stripe_customer_id', function ($customer_id, $feed, $entry, $f
 
     return $customer_id;
 }, 10, 4);
+
+/**
+ * Adjust the specified Stripe Feed to only perform an auth, effectively updating the
+ * billing information via any form with this feed.
+ */
+add_filter('gform_stripe_charge_authorization_only', function ($authorization_only, $feed) {
+    $feed_name = rgars($feed, 'meta/feedName');
+
+    if ($feed_name == 'Update Billing') {
+        $authorization_only = true;
+    }
+
+    return $authorization_only;
+}, 10, 2);
