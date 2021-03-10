@@ -61,6 +61,10 @@
   @media only screen and (min-width: $viewport-breakpoint-large) {
     display: flex;
     text-align: left;
+
+    .menu-item-show-on-small-screens {
+      @include hide-visually;
+    }
   }
 
   text-align: right;
