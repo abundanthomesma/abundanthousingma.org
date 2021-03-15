@@ -68,3 +68,13 @@
     }
   }
 }
+
+.gform_wrapper {
+  select {
+    // README: Setting border & border-radius ensures that Chrome, Safari,
+    //          & Firefox respect font-size & other styles
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 51px;
+  }
+}
