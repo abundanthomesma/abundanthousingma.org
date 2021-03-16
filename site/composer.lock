@@ -4,52 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b6c07e35d3c7792181e9621dda40abe",
+    "content-hash": "feb440295bbcc0af20a9f2e017c2aeba",
     "packages": [
-        {
-            "name": "automattic/jetpack",
-            "version": "9.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/jetpack-production.git",
-                "reference": "cf2e3aec402715e1ab390c94c5524c30448471bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-production/zipball/cf2e3aec402715e1ab390c94c5524c30448471bd",
-                "reference": "cf2e3aec402715e1ab390c94c5524c30448471bd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "ext-json": "*",
-                "ext-openssl": "*",
-                "nojimage/twitter-text-php": "3.1.1"
-            },
-            "require-dev": {
-                "automattic/jetpack-codesniffer": "^2.1",
-                "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
-                "php-parallel-lint/php-parallel-lint": "1.2.0",
-                "sirbrillig/phpcs-changed": "2.5.1"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Jetpack supercharges your self‑hosted WordPress site with the awesome cloud power of WordPress.com",
-            "homepage": "https://jetpack.com/",
-            "support": {
-                "issues": "https://github.com/Automattic/jetpack/issues",
-                "source": "https://github.com/Automattic/jetpack-production/tree/9.3.1"
-            },
-            "time": "2021-01-14T16:28:10+00:00"
-        },
         {
             "name": "composer/installers",
             "version": "v1.10.0",
@@ -356,76 +312,6 @@
                 "junaidbhura/composer-wp-pro-plugins": "*"
             },
             "type": "wordpress-plugin"
-        },
-        {
-            "name": "nojimage/twitter-text-php",
-            "version": "v3.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nojimage/twitter-text-php.git",
-                "reference": "7f466b331cebfdd00e3568acaf45f2e90a39a320"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nojimage/twitter-text-php/zipball/7f466b331cebfdd00e3568acaf45f2e90a39a320",
-                "reference": "7f466b331cebfdd00e3568acaf45f2e90a39a320",
-                "shasum": ""
-            },
-            "require": {
-                "ext-intl": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "phpunit/phpunit": "4.8.*|5.7.*|6.5.*",
-                "symfony/yaml": "^2.6.0|^3.4.0|^4.4.0|^5.0.0",
-                "twitter/twitter-text": "^3.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Twitter\\Text\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Matt Sanford",
-                    "email": "matt@mzsanford.com",
-                    "homepage": "http://mzsanford.com"
-                },
-                {
-                    "name": "Mike Cochrane",
-                    "email": "mikec@mikenz.geek.nz",
-                    "homepage": "http://mikenz.geek.nz"
-                },
-                {
-                    "name": "Nick Pope",
-                    "email": "git@nickpope.me.uk",
-                    "homepage": "http://www.nickpope.me.uk"
-                },
-                {
-                    "name": "Takashi Nojima",
-                    "homepage": "http://php-tips.com"
-                }
-            ],
-            "description": "A library of PHP classes that provide auto-linking and extraction of usernames, lists, hashtags and URLs from tweets.",
-            "homepage": "https://github.com/nojimage/twitter-text-php",
-            "keywords": [
-                "autolink",
-                "extract",
-                "text",
-                "twitter"
-            ],
-            "support": {
-                "issues": "https://github.com/nojimage/twitter-text-php/issues",
-                "source": "https://github.com/nojimage/twitter-text-php/tree/v3.1.1"
-            },
-            "time": "2020-09-30T13:30:59+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -1379,6 +1265,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/gravityformscli/"
+        },
+        {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "9.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/9.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.9.5.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
             "name": "wpackagist-plugin/kioken-blocks",
