@@ -35,7 +35,6 @@ trellis up
 
 For `<environment>`, the available values are:
 
-* `staging`
 * `production`
 
 Deploy a site:
