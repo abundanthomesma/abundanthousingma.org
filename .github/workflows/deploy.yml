@@ -1,0 +1,40 @@
+---
+name: Deploy
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: webfactory/ssh-agent@v0.5.1
+        with:
+          ssh-private-key: ${{ secrets.ID_RSA_AHMA }}
+
+      - name: Trellis Deploy
+        uses: steenbergen-design/trellis-action@v1.0.2
+        with:
+          # ansible vault password
+          vault_password: ${{ secrets.VAULT_PASS }}
+          # the environment to deploy to (staging, production, etc)
+          site_env: production
+          # the WordPress site to deploy (name defined in wordpress_sites)
+          site_name: abundanthousingma.org
+          # Path where site lives
+          # optional, default is ${{ github.workspace }}
+          site_path: ${{ github.workspace }}/site/web/app/themes/abundanthousingma
+          verbose: true
