@@ -93,6 +93,10 @@
 }
 
 .page-header {
+  .page-template-template-no-page-header & {
+    display: none;
+  }
+
   background-image: url("/images/bg-page-header.jpg");
   background-position: bottom right;
   background-repeat: no-repeat;
