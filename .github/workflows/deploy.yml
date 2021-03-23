@@ -55,7 +55,4 @@ jobs:
           site_env: production
           # the WordPress site to deploy (name defined in wordpress_sites)
           site_name: abundanthousingma.org
-          # Path where site lives
-          # optional, default is ${{ github.workspace }}
-          site_path: ${{ github.workspace }}/site/web/app/themes/abundanthousingma
           verbose: true
