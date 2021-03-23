@@ -8,6 +8,7 @@ users:
       - "{{ web_group }}"
     keys:
       - https://github.com/jeffbyrnes.keys
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/f9LsZd+SsVPzUjI6lWGSfN3ZbOHW5GAlIpzdDEqTumuDcTffKuOGJPrvl2jhU0VOedGrEfh9MKiQwWUfAIZIpM3aPLWBUY1+LB8u9bx9E76s4oOFtaLJ6ltaI8ShCXFDvnaaQipHCqizlN9mC8wzfJaEAAkoC0yEX8pwTCAbqcoMdv8O+MV8gJAgDiQ6+X3je55fg2GMdIJ9nJnl+jLkyw90TvIjMW05kFUlJr/H22sqsd12KWFwNH4nti58YiX1uSafDQSkKmkx5v8bOVxEjyYsAJHr0R8XLbCifTvCuLSk+xxwb3bOertownQMFs+R8ri4XY85rDdjmtpIN2zrMS6a7CEqkYWUvjuGIbsbBo379zU2PCcI6D54J/VZEduLaft4zHM5W+LlRqNBVMZOSYtFEMWoDiSnKpvm38iwWCNrsbNmkGW4baujvEUh7qCy2Z8XUy4VlQlC8eCS+mgNr6yAD9grL07EyZ/aTpcQYtf7RQwrpB98xpkeRhwv87SgmnwNEipRC4Sx9qI3L+HNowwilPYAIck3sQlm9zHBZAzRXPzPiQ64KBCJpBvPQ9HhUyoIs5OG3EyI7tizdUBdbXzglhjOv2lvEKt9ut8U+oRWpObSMvhhtsD5wobnMMjHMb1dGVXI4fyDtOXQ0AxAGR8dddAy6v5Bq4fmkAld+Q== abundanthousingma.org
   - name: "{{ admin_user }}"
     groups:
       - sudo
