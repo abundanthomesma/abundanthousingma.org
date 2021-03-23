@@ -9,7 +9,7 @@ wordpress_sites:
           - www.abundanthousingma.org
     local_path: ../site
     admin_email: info@abundanthousingma.org
-    branch: main
+    branch: "{{ site_version | default('main') }}"
     repo: git@github.com:abundanthomesma/abundanthousingma.org.git
     repo_subtree_path: site
     multisite:
