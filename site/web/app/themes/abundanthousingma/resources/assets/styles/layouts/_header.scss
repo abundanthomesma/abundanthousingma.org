@@ -16,18 +16,16 @@
   }
 }
 
-.nav {
-  a {
-    display: inline-block;
-    padding: 0 var(--spacing--small);
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
+.nav a {
+  display: inline-block;
+  padding: 0 var(--spacing--small);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
 
-  & a:hover,
-  .current-menu-item a {
-    color: $action-color;
-  }
+.current-menu-item a,
+.nav a:hover {
+  color: $action-color;
 }
 
 .current-menu-item a:hover {
