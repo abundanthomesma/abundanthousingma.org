@@ -42,9 +42,17 @@
   }
 }
 
-.entry-title {
+.entry-title,
+.page-title {
   color: $action-color;
   text-transform: uppercase;
 
   @include size-from-interval($major-twelfth);
+}
+
+.page-template-default,
+.page-template-template-full-width {
+  .page-title {
+    display: none;
+  }
 }
