@@ -68,7 +68,7 @@
     "stylelint-webpack-plugin": "^2.1.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.30.0",
-    "webpack-assets-manifest": "^5.0.2",
+    "webpack-assets-manifest": "^5.0.6",
     "webpack-cli": "^4.3.0",
     "webpack-dev-middleware": "^4.0.2",
     "webpack-hot-middleware": "^2.22.3",
