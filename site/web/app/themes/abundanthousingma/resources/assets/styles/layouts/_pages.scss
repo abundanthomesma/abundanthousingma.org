@@ -109,17 +109,20 @@
       }
 
       @media only screen and (min-width: $viewport-breakpoint-large) {
-        .header-group {
-          width: 33%;
-        }
+        // README: Disabled to accommodate long words in the header
+        // .header-group {
+        //   width: 33%;
+        // }
 
         .wp-block-embed {
-          width: 66%;
+          // README: Originally 66%, changed to accommodate long words in header
+          width: 100%;
         }
       }
 
       h2 {
         color: $font-color--contrast;
+        text-transform: unset;
 
         @include size-from-interval($major-twelfth * $major-third);
       }
