@@ -114,31 +114,33 @@
     }
   }
 
-  li:nth-child(1) input {
-    background-image: url("/images/membership-icons/dorm.png");
-  }
+  .gfield_radio {
+    div:nth-child(1) input {
+      background-image: url("/images/membership-icons/dorm.png");
+    }
 
-  li:nth-child(2) input {
-    background-image: url("/images/membership-icons/tiny-house.png");
-  }
+    div:nth-child(2) input {
+      background-image: url("/images/membership-icons/tiny-house.png");
+    }
 
-  li:nth-child(3) input {
-    background-image: url("/images/membership-icons/single-family-with-adu.png");
-  }
+    div:nth-child(3) input {
+      background-image: url("/images/membership-icons/single-family-with-adu.png");
+    }
 
-  li:nth-child(4) input {
-    background-image: url("/images/membership-icons/townhouses.png");
-  }
+    div:nth-child(4) input {
+      background-image: url("/images/membership-icons/townhouses.png");
+    }
 
-  li:nth-child(5) input {
-    background-image: url("/images/membership-icons/triple-decker.png");
-  }
+    div:nth-child(5) input {
+      background-image: url("/images/membership-icons/triple-decker.png");
+    }
 
-  li:nth-child(6) input {
-    background-image: url("/images/membership-icons/apartment-building.png");
-  }
+    div:nth-child(6) input {
+      background-image: url("/images/membership-icons/apartment-building.png");
+    }
 
-  li:nth-child(7) input {
-    background-image: url("/images/membership-icons/mixed-use-development.png");
+    div:nth-child(7) input {
+      background-image: url("/images/membership-icons/mixed-use-development.png");
+    }
   }
 }
