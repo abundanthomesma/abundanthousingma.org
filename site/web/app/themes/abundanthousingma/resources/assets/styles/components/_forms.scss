@@ -44,6 +44,10 @@
 
     @media only screen and (min-width: $viewport-breakpoint-large) {
       min-width: 18.375rem;
+
+      .home & {
+        min-width: unset;
+      }
     }
 
     &::placeholder {
