@@ -27,7 +27,7 @@
       <div id="can-form-area-join-our-mailing-list-82" style="display: none;"></div>
 
       <!-- Begin Newsletter Signup Form -->
-      <form accept-charset="utf-8" action="https://actionnetwork.org/forms/join-our-mailing-list-82/answers"  class="mc-embedded-subscribe-form validate" id="new_answer" method="post" target="_blank">
+      <form accept-charset="utf-8" action="https://actionnetwork.org/forms/join-our-mailing-list-82/answers"  class="mc-embedded-subscribe-form validate" id="new_answer" method="post">
         <input type="hidden" name="utf8" value="✓">
         <input type="hidden" name="authenticity_token" value="" id="real_auth_token">
         <input type="hidden" name="version" value="v4">
