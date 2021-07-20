@@ -116,7 +116,8 @@
     "wpackagist-plugin/kioken-blocks": "*",
     "wpackagist-plugin/csp-manager": "*",
     "wpackagist-plugin/jetpack": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/email-notifications-disabler": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",

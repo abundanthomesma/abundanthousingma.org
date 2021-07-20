@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcc0be2fd63993cee911f465b1caa4ea",
+    "content-hash": "2813aae59d1d519808a24fd7fea9a542",
     "packages": [
         {
             "name": "composer/installers",
@@ -1249,6 +1249,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/csp-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/email-notifications-disabler",
+            "version": "0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/email-notifications-disabler/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/email-notifications-disabler.zip?timestamp=1625433601"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/email-notifications-disabler/"
         },
         {
             "name": "wpackagist-plugin/gravityformscli",
