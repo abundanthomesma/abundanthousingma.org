@@ -2,14 +2,13 @@
   h2 {
     color: $action-color;
     text-transform: uppercase;
-
-    @include size-from-interval($major-twelfth);
+    font-size: modular-scale(5);
   }
 
   h3,
   p,
   li {
-    @include size-from-interval($major-seventh);
+    font-size: modular-scale(2);
   }
 
   ul {
@@ -42,7 +41,7 @@
     }
 
     h3 {
-      @include size-from-interval($major-twelfth * $major-third);
+      font-size: modular-scale(6);
     }
 
     li {
@@ -123,12 +122,11 @@
       h2 {
         color: $font-color--contrast;
         text-transform: unset;
-
-        @include size-from-interval($major-twelfth * $major-third);
+        font-size: modular-scale(6);
       }
 
       .wp-block-button__link {
-        @include size-from-interval($octave);
+        font-size: modular-scale(3);
       }
     }
 
@@ -151,11 +149,11 @@
 
       h2 {
         color: $action-color;
-        @include size-from-interval($octave);
+        font-size: modular-scale(3);
       }
 
       p {
-        @include size-from-interval($perfect-fifth);
+        font-size: modular-scale(1);
       }
 
       .mc-embedded-subscribe-form {
@@ -167,7 +165,7 @@
       }
 
       [type="submit"] {
-        @include size-from-interval($golden);
+        font-size: modular-scale(2);
 
         &:hover {
           background-color: $action-color--alt;
@@ -181,15 +179,13 @@
       h2 {
         color: $font-color--contrast;
         order: 2;
-
-        @include size-from-interval($major-twelfth * $major-third);
+        font-size: modular-scale(6);
       }
 
       h3 {
         font-family: var(--font-family--contrast);
         order: 3;
-
-        @include size-from-interval($major-twelfth);
+        font-size: modular-scale(5);
       }
 
       .wp-block-group__inner-container {
@@ -223,8 +219,7 @@
 
       h2 {
         color: $action-color;
-
-        @include size-from-interval($major-twelfth);
+        font-size: modular-scale(5);
       }
 
       .wp-block-latest-posts a {
@@ -232,8 +227,7 @@
         font-family: var(--font-family--contrast);
         line-height: 1.15;
         text-decoration: none;
-
-        @include size-from-interval($double-octave);
+        font-size: modular-scale(8);
       }
 
       .wp-block-buttons {
@@ -244,8 +238,7 @@
         background-color: $font-color--base;
         color: $font-color--contrast;
         font-family: var(--font-family--contrast);
-
-        @include size-from-interval($perfect-fifth);
+        font-size: modular-scale(1);
 
         &:hover {
           background-color: $action-color;
@@ -278,12 +271,11 @@
 
       h2 {
         color: $action-color;
-
-        @include size-from-interval($major-twelfth);
+        font-size: modular-scale(5);
       }
 
       p {
-        @include size-from-interval($perfect-fifth);
+        font-size: modular-scale(1);
       }
     }
   }

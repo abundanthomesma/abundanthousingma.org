@@ -1,3 +1,9 @@
+$bourbon: (
+  "modular-scale-base": 1rem,
+  // README: Default is $major-third
+  "modular-scale-ratio": $minor-third,
+);
+
 // Colors
 $blue:                  #73cad5;
 $red-light:             #f3726a;

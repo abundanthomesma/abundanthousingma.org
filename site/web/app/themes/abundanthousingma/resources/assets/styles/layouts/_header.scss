@@ -11,7 +11,7 @@
 
   a {
     color: $font-color--base;
-    font-size: 1.5rem;
+    font-size: modular-scale(2);
     text-decoration: none;
   }
 }
@@ -137,7 +137,7 @@
         width: 50%;
       }
 
-      @include size-from-interval($major-tenth);
+      font-size: modular-scale(4);
     }
   }
 

@@ -38,7 +38,7 @@
   h3,
   p,
   li {
-    font-size: 1rem;
+    font-size: modular-scale(1);
   }
 }
 
@@ -46,8 +46,7 @@
 .page-title {
   color: $action-color;
   text-transform: uppercase;
-
-  @include size-from-interval($major-twelfth);
+  font-size: modular-scale(5);
 }
 
 .page-template-default,
