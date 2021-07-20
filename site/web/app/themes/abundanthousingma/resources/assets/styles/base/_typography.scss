@@ -12,7 +12,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family--heading);
-  font-size: 1.25rem;
+  @include size-from-interval(1.25);
   line-height: var(--line-height--heading);
   margin: 0 0 var(--spacing--small);
 }

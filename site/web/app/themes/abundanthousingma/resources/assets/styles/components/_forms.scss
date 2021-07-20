@@ -28,12 +28,12 @@
   label {
     color: $font-color--contrast;
     font-family: var(--font-family--contrast);
-    font-size: 1.875rem;
+    @include size-from-interval(1.875);
     font-weight: var(--font-weight--normal);
   }
 
   input {
-    font-size: 1rem;
+    @include size-from-interval(1);
   }
 
   [type="text"],
@@ -58,7 +58,7 @@
 
   [type="submit"] {
     font-family: var(--font-family--contrast);
-    font-size: 1.625rem;
+    @include size-from-interval(1.625);
     font-weight: var(--font-weight--normal);
     margin-top: 1rem;
     padding: var(--spacing--small) var(--spacing);

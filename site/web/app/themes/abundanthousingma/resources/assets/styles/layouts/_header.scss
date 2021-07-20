@@ -11,7 +11,7 @@
 
   a {
     color: $font-color--base;
-    font-size: 1.5rem;
+    @include size-from-interval(1.5);
     text-decoration: none;
   }
 }
