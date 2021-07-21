@@ -33,7 +33,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityforms",
-        "version": "2.4.22.7",
+        "version": "2.5.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -78,7 +78,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityformsstripe",
-        "version": "3.9.2",
+        "version": "4.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",

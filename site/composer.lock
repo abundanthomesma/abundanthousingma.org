@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2813aae59d1d519808a24fd7fea9a542",
+    "content-hash": "484b9f35eda6fc30dd65795451ae11c4",
     "packages": [
         {
             "name": "composer/installers",
@@ -269,7 +269,7 @@
         },
         {
             "name": "junaidbhura/gravityforms",
-            "version": "2.4.22.7",
+            "version": "2.5.7",
             "dist": {
                 "type": "zip",
                 "url": "https://www.gravityforms.com"
@@ -305,7 +305,7 @@
         },
         {
             "name": "junaidbhura/gravityformsstripe",
-            "version": "3.9.2",
+            "version": "4.1",
             "dist": {
                 "type": "zip",
                 "url": "https://www.gravityforms.com"
