@@ -4,6 +4,7 @@
 // TODO: .search-form .search-field {}
 // TODO: .search-form .search-submit {}
 
+// Mailchimp form styles (but also some of our own forms b/c Jeff was lazy)
 .mc-embedded-subscribe-form {
   @media only screen and (min-width: $viewport-breakpoint-large) {
     display: flex;
@@ -69,6 +70,19 @@
   }
 }
 
+// Action Network styles
+.can_embed form li {
+  display: initial;
+}
+
+.international_link-wrap,
+.country_drop_wrap,
+#action_info,
+#logo_wrap {
+  display: none;
+}
+
+// Gravity Form styles
 .gform_wrapper {
   select {
     // README: Setting border & border-radius ensures that Chrome, Safari,
@@ -143,15 +157,4 @@
       background-image: url("/images/membership-icons/mixed-use-development.png");
     }
   }
-}
-
-.can_embed form li {
-  display: initial;
-}
-
-.international_link-wrap,
-.country_drop_wrap,
-#action_info,
-#logo_wrap {
-  display: none;
 }
