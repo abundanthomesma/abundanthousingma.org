@@ -1,0 +1,23 @@
+---
+# Created by trellis-cli v0.9.0
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+wordpress_sites:
+  abundanthousingma.org:
+    site_hosts:
+      - canonical: staging.abundanthousingma.org
+    local_path: ../site
+    admin_email: jeff@abundanthousingma.org
+    branch: "{{ site_version | default('main') }}"
+    repo: git@github.com:abundanthomesma/abundanthousingma.org.git
+    repo_subtree_path: site
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      stapling_enabled: false
+      provider: cloudflare-origin-ca
+    cache:
+      enabled: false
+    cloudflare-origin-ca:
+      hostnames:
+        - staging.abundanthousingma.org

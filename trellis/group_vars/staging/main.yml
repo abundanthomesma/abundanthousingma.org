@@ -1,0 +1,4 @@
+---
+cfca_package_state: latest
+cloudflare_origin_ca_no_log: true
+mysql_root_password: "{{ vault_mysql_root_password }}" # Define this variable in group_vars/staging/vault.yml
