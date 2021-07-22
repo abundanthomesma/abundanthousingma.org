@@ -45,6 +45,7 @@
 .entry-title,
 .page-title {
   color: $action-color;
+  text-decoration: none;
   text-transform: uppercase;
 
   @include size-from-interval($major-twelfth);
