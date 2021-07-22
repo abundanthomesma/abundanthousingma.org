@@ -45,10 +45,13 @@
 .entry-title,
 .page-title {
   color: $action-color;
-  text-decoration: none;
   text-transform: uppercase;
 
   @include size-from-interval($major-twelfth);
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .page-template-default,
