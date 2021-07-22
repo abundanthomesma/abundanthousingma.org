@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "484b9f35eda6fc30dd65795451ae11c4",
+    "content-hash": "f7b81cb3d3cfa881bd93fef052edc5ba",
     "packages": [
         {
             "name": "composer/installers",
@@ -1357,6 +1357,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/updraftplus/"
+        },
+        {
+            "name": "wpackagist-plugin/wayfinder",
+            "version": "1.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wayfinder/",
+                "reference": "tags/1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wayfinder.1.0.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wayfinder/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

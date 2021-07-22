@@ -117,7 +117,8 @@
     "wpackagist-plugin/csp-manager": "*",
     "wpackagist-plugin/jetpack": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/email-notifications-disabler": "*"
+    "wpackagist-plugin/email-notifications-disabler": "*",
+    "wpackagist-plugin/wayfinder": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
