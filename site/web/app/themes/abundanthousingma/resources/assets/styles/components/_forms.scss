@@ -144,3 +144,14 @@
     }
   }
 }
+
+.can_embed form li {
+  display: initial;
+}
+
+.international_link-wrap,
+.country_drop_wrap,
+#action_info,
+#logo_wrap {
+  display: none;
+}
