@@ -7,6 +7,8 @@ wordpress_sites:
       - canonical: abundanthousingma.org
         redirects:
           - www.abundanthousingma.org
+          - abundanthousingma.com
+          - www.abundanthousingma.com
     local_path: ../site
     admin_email: info@abundanthousingma.org
     branch: "{{ site_version | default('main') }}"
