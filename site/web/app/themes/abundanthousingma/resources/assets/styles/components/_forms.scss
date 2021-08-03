@@ -28,12 +28,8 @@
   label {
     color: $font-color--contrast;
     font-family: var(--font-family--contrast);
-    @include size-from-interval(1.875);
+    @include size-from-interval($major-seventh);
     font-weight: var(--font-weight--normal);
-  }
-
-  input {
-    @include size-from-interval(1);
   }
 
   [type="text"],
@@ -58,7 +54,6 @@
 
   [type="submit"] {
     font-family: var(--font-family--contrast);
-    @include size-from-interval(1.625);
     font-weight: var(--font-weight--normal);
     margin-top: 1rem;
     padding: var(--spacing--small) var(--spacing);
@@ -94,70 +89,81 @@
     border-radius: 5px;
     height: 51px;
   }
-}
 
-.gfield_product_4_3,
-.gfield_product_4_18 {
-  .gfield_radio li {
-    margin: 0;
-  }
-
-  input {
-    appearance: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    filter: brightness(1.8) grayscale(1) opacity(0.7);
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    transition: all 100ms ease-in;
-    width: 100px;
-
-    &:hover {
-      filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  &.gravity-theme {
+    .gfield_label,
+    .gfield_required_asterisk {
+      @include size-from-interval($major-seventh);
     }
 
-    &:active {
-      opacity: 0.9;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &:checked {
-      filter: none;
+    .ginput_complex label {
+      @include size-from-interval($minor-seventh);
     }
   }
 
-  .gfield_radio {
-    div:nth-child(1) input {
-      background-image: url("/images/membership-icons/dorm.png");
+  .gfield_product_4_3,
+  .gfield_product_4_18 {
+    .gfield_radio li {
+      margin: 0;
     }
 
-    div:nth-child(2) input {
-      background-image: url("/images/membership-icons/tiny-house.png");
+    input {
+      appearance: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      filter: brightness(1.8) grayscale(1) opacity(0.7);
+      height: 100px;
+      margin: 0;
+      padding: 0;
+      transition: all 100ms ease-in;
+      width: 100px;
+
+      &:hover {
+        filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+      }
+
+      &:active {
+        opacity: 0.9;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:checked {
+        filter: none;
+      }
     }
 
-    div:nth-child(3) input {
-      background-image: url("/images/membership-icons/single-family-with-adu.png");
-    }
+    .gfield_radio {
+      div:nth-child(1) input {
+        background-image: url("/images/membership-icons/dorm.png");
+      }
 
-    div:nth-child(4) input {
-      background-image: url("/images/membership-icons/townhouses.png");
-    }
+      div:nth-child(2) input {
+        background-image: url("/images/membership-icons/tiny-house.png");
+      }
 
-    div:nth-child(5) input {
-      background-image: url("/images/membership-icons/triple-decker.png");
-    }
+      div:nth-child(3) input {
+        background-image: url("/images/membership-icons/single-family-with-adu.png");
+      }
 
-    div:nth-child(6) input {
-      background-image: url("/images/membership-icons/apartment-building.png");
-    }
+      div:nth-child(4) input {
+        background-image: url("/images/membership-icons/townhouses.png");
+      }
 
-    div:nth-child(7) input {
-      background-image: url("/images/membership-icons/mixed-use-development.png");
+      div:nth-child(5) input {
+        background-image: url("/images/membership-icons/triple-decker.png");
+      }
+
+      div:nth-child(6) input {
+        background-image: url("/images/membership-icons/apartment-building.png");
+      }
+
+      div:nth-child(7) input {
+        background-image: url("/images/membership-icons/mixed-use-development.png");
+      }
     }
   }
 }
