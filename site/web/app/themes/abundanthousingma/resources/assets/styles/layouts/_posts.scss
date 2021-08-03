@@ -38,7 +38,7 @@
   h3,
   p,
   li {
-    @include size-from-interval(1);
+    @include size-from-interval($perfect-fourth);
   }
 }
 

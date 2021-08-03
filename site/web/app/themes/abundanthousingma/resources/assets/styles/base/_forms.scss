@@ -27,7 +27,7 @@ select,
 textarea {
   display: block;
   font-family: var(--font-family);
-  @include size-from-interval(1);
+  @include size-from-interval($perfect-fourth);
 }
 
 [type="search"] {
