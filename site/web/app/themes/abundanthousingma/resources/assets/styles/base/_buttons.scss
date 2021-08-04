@@ -11,7 +11,7 @@ button,
   cursor: pointer;
   display: inline-block;
   font-family: var(--font-family--contrast);
-  font-size: 1rem;
+  @include size-from-interval($golden);
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;

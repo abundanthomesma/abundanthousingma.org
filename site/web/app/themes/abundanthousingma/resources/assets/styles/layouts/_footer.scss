@@ -14,7 +14,7 @@
 
   background-color: $bg-color--footer;
   color: $font-color--contrast;
-  font-size: 1.125rem;
+  @include size-from-interval($major-second);
   position: relative;
 
   .wp-block-group__inner-container {
@@ -29,7 +29,7 @@
 
   // Copyright text
   .footer-copyright-name {
-    font-size: 1.3125rem;
+    @include size-from-interval($perfect-fourth);
   }
 
   // Mailchimp signup form in footer
@@ -44,12 +44,12 @@
 
     [type="email"]::placeholder {
       font-family: var(--font-family--contrast);
-      font-size: 1.5rem;
+      @include size-from-interval($perfect-fifth);
       text-transform: none;
     }
 
     [type="submit"] {
-      font-size: 1.625rem;
+      @include size-from-interval($golden);
     }
   }
 }
