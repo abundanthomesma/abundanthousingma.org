@@ -40,7 +40,7 @@
     "@soda/friendly-errors-webpack-plugin": "^1.8.0",
     "autoprefixer": "^10.0.1",
     "bourbon": "^7.0.0",
-    "browser-sync": "~2.24.7",
+    "browser-sync": "~2.27.5",
     "browser-sync-webpack-plugin": "^2.3.0",
     "bs-html-injector": "~3.0",
     "buble": "^0.20.0",
