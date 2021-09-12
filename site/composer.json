@@ -33,7 +33,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityforms",
-        "version": "2.5.7",
+        "version": "2.5.10",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
