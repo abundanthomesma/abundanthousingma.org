@@ -1,3 +1,14 @@
+### 1.9.0: October 27th, 2021
+* Bump max tested Ansible version to `2.10.7` ([#1317](https://github.com/roots/trellis/pull/1317))
+* Fix display color output in logs ([#1316](https://github.com/roots/trellis/pull/1316))
+* Define `composer_authentications` default ([#1315](https://github.com/roots/trellis/pull/1315))
+* Fix #1311 - Remove explicit permission for site directory ([#1314](https://github.com/roots/trellis/pull/1314))
+* Fix #1277 - Disable PHP CLI memory limit ([#1278](https://github.com/roots/trellis/pull/1278))
+* Fix #1285 - Improve handling of WP-CLI failed verification ([#1295](https://github.com/roots/trellis/pull/1295))
+* Fix #1284 - Update logrotate postrotate Nginx command ([#1293](https://github.com/roots/trellis/pull/1293))
+* Replace php-gd with php-imagick ([#1292](https://github.com/roots/trellis/pull/1292))
+* Improve handling of PHP versions and support PHP 8.0 (default is still 7.4) ([#1284](https://github.com/roots/trellis/pull/1284))
+
 ### 1.8.0: February 12th, 2021
 * Set permissions on all file related tasks ([#1270](https://github.com/roots/trellis/pull/1270))
 * Use Python 3 for `ansible_local` Vagrant provisioner ([#1269](https://github.com/roots/trellis/pull/1269))

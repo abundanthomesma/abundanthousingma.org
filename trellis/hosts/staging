@@ -1,3 +1,5 @@
+# Add each host to the [staging] group and to a "type" group such as [web] or [db].
+# List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
 staging_host ansible_host=164.90.141.70
