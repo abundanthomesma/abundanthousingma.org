@@ -157,6 +157,9 @@ Vagrant.configure('2') do |config|
 
   # VirtualBox settings
   config.vm.provider 'virtualbox' do |vb|
+    # README: Added per https://github.com/hashicorp/vagrant/issues/12557#issuecomment-958183899
+    #         Waiting on https://www.virtualbox.org/ticket/20636 to be fixed
+    vb.gui = true
     vb.name = config.vm.hostname
     vb.customize ['modifyvm', :id, '--cpus', vconfig.fetch('vagrant_cpus')]
     vb.customize ['modifyvm', :id, '--memory', vconfig.fetch('vagrant_memory')]
