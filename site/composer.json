@@ -102,7 +102,6 @@
     "roots/soil": "^4.0",
     "wpackagist-plugin/mailgun": "^1.7",
     "viper007bond/regenerate-thumbnails": "^3.1",
-    "wpackagist-plugin/backwpup": "^3.7",
     "wpackagist-plugin/updraftplus": "^1.16",
     "wpackagist-plugin/wp-to-buffer": "^3.6",
     "wpackagist-plugin/wp-toolbelt": "^3.0",

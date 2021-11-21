@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "097f04f3e01ed216a03314c899484b71",
+    "content-hash": "a6fd2f13644d60076d562114d44e6279",
     "packages": [
         {
             "name": "composer/installers",
@@ -1190,24 +1190,6 @@
                 }
             ],
             "time": "2021-01-20T15:23:13+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/backwpup",
-            "version": "3.10.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/backwpup/",
-                "reference": "tags/3.10.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/backwpup.3.10.0.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/backwpup/"
         },
         {
             "name": "wpackagist-plugin/cloudflare",
