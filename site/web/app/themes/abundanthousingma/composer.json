@@ -32,10 +32,7 @@
     }
   },
   "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/strarsis/sage-installer"
-    }
+    { "type": "vcs", "url": "https://github.com/strarsis/sage-installer" }
   ],
   "require": {
     "php": ">=7.1",
