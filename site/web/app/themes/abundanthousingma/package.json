@@ -75,7 +75,7 @@
     "webpack-dev-middleware": "^5.0.0",
     "webpack-hot-middleware": "^2.22.3",
     "webpack-merge": "^5.8.0",
-    "yargs": "^17.0.1"
+    "yargs": "^17.3.1"
   },
   "dependencies": {
     "formbouncerjs": "^1.4.6",
