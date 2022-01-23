@@ -99,6 +99,13 @@
     .ginput_complex label {
       @include size-from-interval($minor-seventh);
     }
+
+    .gsection {
+      border-top: 1px solid #ccc;
+      border-bottom: none;
+      padding: 2rem 1rem 0 0;
+      margin-top: 1rem;
+    }
   }
 
   .gfield_product_4_3,
