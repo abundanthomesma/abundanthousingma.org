@@ -126,7 +126,12 @@
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "junaidbhura/composer-wp-pro-plugins": true,
+      "roots/wordpress-core-installer": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
