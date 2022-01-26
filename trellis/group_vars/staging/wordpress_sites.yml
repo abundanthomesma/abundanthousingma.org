@@ -1,6 +1,8 @@
 ---
-# Created by trellis-cli v1.0.0
-# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+# Documentation: https://roots.io/trellis/docs/remote-server-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/staging/vault.yml
+
 wordpress_sites:
   abundanthousingma.org:
     site_hosts:

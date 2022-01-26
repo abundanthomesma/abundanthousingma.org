@@ -1,20 +1,6 @@
 disable_default_pool: true
 memcached_sessions: false
 
-php_extensions_default:
-  php7.4-cli: "{{ apt_package_state }}"
-  php7.4-common: "{{ apt_package_state }}"
-  php7.4-curl: "{{ apt_package_state }}"
-  php7.4-dev: "{{ apt_package_state }}"
-  php7.4-fpm: "{{ apt_package_state }}"
-  php7.4-gd: "{{ apt_package_state }}"
-  php7.4-mbstring: "{{ apt_package_state }}"
-  php7.4-mysql: "{{ apt_package_state }}"
-  php7.4-opcache: "{{ apt_package_state }}"
-  php7.4-xml: "{{ apt_package_state }}"
-  php7.4-xmlrpc: "{{ apt_package_state }}"
-  php7.4-zip: "{{ apt_package_state }}"
-
 php_extensions_custom: {}
 php_extensions: "{{ php_extensions_default | combine(php_extensions_custom) }}"
 
@@ -25,6 +11,7 @@ php_max_execution_time: 120
 php_max_input_time: 300
 php_max_input_vars: 1000
 php_memory_limit: 96M
+php_cli_memory_limit: -1
 php_mysqlnd_collect_memory_statistics: 'Off'
 php_post_max_size: 25M
 php_sendmail_path: /usr/sbin/ssmtp -t
