@@ -117,7 +117,8 @@
     "wpackagist-plugin/jetpack": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/email-notifications-disabler": "*",
-    "wpackagist-plugin/wayfinder": "*"
+    "wpackagist-plugin/wayfinder": "*",
+    "wpackagist-plugin/redirection": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
