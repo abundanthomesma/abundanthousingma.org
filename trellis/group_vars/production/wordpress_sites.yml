@@ -22,9 +22,12 @@ wordpress_sites:
       enabled: true
       stapling_enabled: false
       provider: cloudflare-origin-ca
+    # https://docs.roots.io/trellis/master/fastcgi-caching/#example-cache-configurations
     cache:
-      enabled: false
+      enabled: true
+      skip_cache_uri: /wp-admin/|/wp-json/|/xmlrpc.php|wp-.*.php|/feed/|index.php|sitemap(_index)?.xml|/donate.*|/join.*
+      skip_cache_cookie: comment_author|wordpress_[a-f0-9]+|wp-postpass|wordpress_no_cache|wordpress_logged_in|woocommerce_cart_hash|woocommerce_items_in_cart|wp_woocommerce_session_
     cloudflare-origin-ca:
       hostnames:
         - abundanthousingma.org
-        - '*.abundanthousingma.org'
+        - "*.abundanthousingma.org"
