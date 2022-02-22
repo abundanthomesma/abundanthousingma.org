@@ -10,7 +10,7 @@
     dest: /etc/sudoers
     state: present
     regexp: "^%sudo"
-    line: "%sudo ALL=(ALL:ALL) ALL"
+    line: "%sudo ALL=(ALL:ALL) NOPASSWD:ALL"
     validate: "/usr/sbin/visudo -cf %s"
 
 - name: Fail if root login will be disabled but admin_user will not be a sudoer
@@ -43,7 +43,7 @@
   template:
     src: sudoers.d.j2
     dest: "/etc/sudoers.d/{{ web_user }}-services"
-    mode: '0440'
+    mode: "0440"
     owner: root
     group: root
     validate: "/usr/sbin/visudo -cf %s"
@@ -61,7 +61,7 @@
   authorized_key:
     user: "{{ web_user }}"
     key: "{{ lookup('file', item) }}"
-  with_fileglob: 'public_keys/*.pub'
+  with_fileglob: "public_keys/*.pub"
 
 - name: Check whether Ansible can connect as admin_user
   command: ansible {{ inventory_hostname }} -m ping -u {{ admin_user }} {{ cli_options | default('') }}
