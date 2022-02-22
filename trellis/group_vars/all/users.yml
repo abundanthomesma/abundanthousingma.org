@@ -15,6 +15,11 @@ users:
     keys:
       - https://github.com/jeffbyrnes.keys
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+  - name: briancorey
+    groups:
+      - sudo
+    keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCpn0iqAm3WONdqhIte8q81n9d2N7UWDm4E0Nps/Yxwu0cnhay3t/6hB2eC0Zc5iLG6uB0wTFZ5KPz6fLx3kNjOn5j/wVky7U0OLQc0SGnt55HNcmCdF/D9/vXCcNlEVeG3UHUNTg8qjp7+nYPkqqHaLB3JQOVEaMrMEUhulr3Z3Tp2lJuMpDJ2KEgMEXFEwfnYQyGQORw7OUnkVI8qKEJowNr3MgKvQmR2NWH2t3Dx5z6gMcoxsL/jbHKKLKCONxkns2dUOvEpOv9UuthhHZXAp2XuZ1KKWYbW3istiVwySrZDojWfdZRcfGI1mZ4owggE5S+bM0qzL1VV+D66S0rFL+cpJ66jRIS3wwPxIjCuY4OUCWHl1Zp36tAol5HsqW0qj4pTlEiEM3bMG9/AztvIEwNau6cNTbSt6JEQq/KWrmCut5P2fzdRQPzyccR/kXWXr4LWIAk30ZeB1YKhttivX2iUr4aII2VNk9mQe3Xbq5mt/XhXsj5Qf8celnIlDU/ByGUTm98ReqjMxhFXRJUaPrN4rxBzYspYZksQQvEhG47/po8z6v/amqTccS/YrvDULpEk7CFQEdw9KoNMv+EvobWHn9PoTAOQN93+DbLggSvJdcKCfM4TxiA7t6nKjiFoU/XzgyLmqCJYy+c+ncqeZZDghg9PZczShv7OMlfSkQ== brian@digitalartisans.com
 
 web_user: web
 web_group: www-data
