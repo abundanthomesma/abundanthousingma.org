@@ -8,13 +8,13 @@ users:
       - "{{ web_group }}"
     keys:
       - https://github.com/jeffbyrnes.keys
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - https://github.com/jeffbyrnes.keys
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
   - name: briancorey
     groups:
       - sudo
