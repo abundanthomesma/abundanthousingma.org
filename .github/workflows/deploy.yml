@@ -51,7 +51,7 @@ jobs:
           ssh-auth-sock: ${{ github.workspace }}/ssh-auth.sock
 
       - name: Trellis Deploy
-        uses: jeffbyrnes/trellis-action:master
+        uses: jeffbyrnes/trellis-action@master
         with:
           # ansible vault password
           vault_password: ${{ secrets.VAULT_PASS }}
