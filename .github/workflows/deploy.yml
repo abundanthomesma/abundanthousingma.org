@@ -28,35 +28,35 @@ jobs:
       - run: cd site/web/app/themes/abundanthousingma && yarn build
       - run: cd site/web/app/themes/abundanthousingma && yarn test
 
-  # deploy:
-  #   # Require that these jobs succeed before this one
-  #   needs:
-  #     - lint
+  deploy:
+    # Require that these jobs succeed before this one
+    needs:
+      - lint
 
-  #   # Only deploy the main branch
-  #   if: github.ref == 'refs/heads/main'
+    # Only deploy the main branch
+    if: github.ref == 'refs/heads/main'
 
-  #   # The type of runner that the job will run on
-  #   runs-on: ubuntu-latest
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-  #   # The GitHub Environment to use
-  #   environment: production
+    # The GitHub Environment to use
+    environment: production
 
-  #   steps:
-  #     - uses: actions/checkout@v3.0.2
+    steps:
+      - uses: actions/checkout@v3.0.2
 
-  #     - uses: webfactory/ssh-agent@v0.5.4
-  #       with:
-  #         ssh-private-key: ${{ secrets.ID_RSA_AHMA }}
-  #         ssh-auth-sock: ${{ github.workspace }}/ssh-auth.sock
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.ID_RSA_AHMA }}
+          ssh-auth-sock: ${{ github.workspace }}/ssh-auth.sock
 
-  #     - name: Trellis Deploy
-  #       uses: jeffbyrnes/trellis-action@v1.0.1
-  #       with:
-  #         # ansible vault password
-  #         vault_password: ${{ secrets.VAULT_PASS }}
-  #         # the environment to deploy to (staging, production, etc)
-  #         site_env: production
-  #         # the WordPress site to deploy (name defined in wordpress_sites)
-  #         site_name: abundanthousingma.org
-  #         verbose: true
+      - name: Trellis Deploy
+        uses: jeffbyrnes/trellis-action@v1.0.1
+        with:
+          # ansible vault password
+          vault_password: ${{ secrets.VAULT_PASS }}
+          # the environment to deploy to (staging, production, etc)
+          site_env: production
+          # the WordPress site to deploy (name defined in wordpress_sites)
+          site_name: abundanthousingma.org
+          verbose: true
