@@ -1,3 +1,17 @@
+### 1.20.0: 2022-05-24
+* Update to WordPress 6.0, add Twenty Twenty-Two theme as dependency ([#639](https:/
+/github.com/roots/bedrock/pull/639))
+
+### 1.19.3: 2022-04-06
+* Bump roots/wordpress to 5.9.3 ([#633](https://github.com/roots/bedrock/pull/633))
+* Bump composer/installers from 2.0.1 to 2.1.0 ([#632](https://github.com/roots/bedrock/pull/632))
+
+### 1.19.2: 2022-03-11
+* Bump roots/wordpress to 5.9.2 ([#631](https://github.com/roots/bedrock/pull/631))
+
+### 1.19.1: 2022-02-23
+* Bump roots/wordpress to 5.9.1 ([#626](https://github.com/roots/bedrock/pull/630))
+
 ### 1.19.0: 2022-01-25
 * Bump roots/wordpress to 5.9 ([#626](https://github.com/roots/bedrock/pull/626))
 * Bump squizlabs/php_codesniffer from 3.6.1 to 3.6.2 ([#623](https://github.com/roots/bedrock/pull/623))

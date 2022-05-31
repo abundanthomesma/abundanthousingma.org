@@ -2,7 +2,7 @@
   "name": "roots/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
@@ -91,13 +91,13 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "composer/installers": "^2.0",
+    "php": ">=7.4",
+    "composer/installers": "^2.1",
     "vlucas/phpdotenv": "^5.4",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "^5.9",
+    "roots/wordpress": "^6.0",
     "roots/wp-config": "^1.0",
     "roots/wp-password-bcrypt": "^1.1",
     "roots/soil": "^4.0",
