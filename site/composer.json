@@ -37,7 +37,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.gravityforms.com"
+          "url": "https://www.gravityforms.com/"
         },
         "require": {
           "junaidbhura/composer-wp-pro-plugins": "*"
@@ -52,7 +52,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.gravityforms.com"
+          "url": "https://www.gravityforms.com/"
         },
         "require": {
           "junaidbhura/composer-wp-pro-plugins": "*"
@@ -67,7 +67,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.gravityforms.com"
+          "url": "https://www.gravityforms.com/"
         },
         "require": {
           "junaidbhura/composer-wp-pro-plugins": "*"
@@ -82,7 +82,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://www.gravityforms.com"
+          "url": "https://www.gravityforms.com/"
         },
         "require": {
           "junaidbhura/composer-wp-pro-plugins": "*"
