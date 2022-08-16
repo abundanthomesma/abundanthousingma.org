@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
+          cache: yarn
+          cache-dependency-path: site/web/app/themes/abundanthousingma/yarn.lock
 
       - run: cd site/web/app/themes/abundanthousingma && yarn
       - run: cd site/web/app/themes/abundanthousingma && yarn build
