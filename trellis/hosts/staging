@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-staging_host ansible_host=164.90.141.70
+staging_host ansible_host=x.x.x.x
 
 [web]
-staging_host ansible_host=164.90.141.70
+staging_host ansible_host=x.x.x.x
