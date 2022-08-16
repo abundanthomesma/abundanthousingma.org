@@ -33,7 +33,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityforms",
-        "version": "2.5.10",
+        "version": "2.6.5",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -48,7 +48,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityformshubspot",
-        "version": "1.5.2",
+        "version": "1.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -63,7 +63,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityformsmailgun",
-        "version": "1.3",
+        "version": "1.3.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -78,7 +78,7 @@
       "type": "package",
       "package": {
         "name": "junaidbhura/gravityformsstripe",
-        "version": "4.1",
+        "version": "4.2.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
