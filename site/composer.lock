@@ -1186,15 +1186,15 @@
         },
         {
             "name": "wpackagist-plugin/csp-manager",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/csp-manager/",
-                "reference": "tags/1.2.0"
+                "reference": "tags/1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/csp-manager.1.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/csp-manager.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
