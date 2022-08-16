@@ -567,16 +567,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "4.0.5",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "6ca133aa67837375f2f114ad5cbf9ed30209471a"
+                "reference": "e8e15c29f01414f86610445be8f7274b8b9a73b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/6ca133aa67837375f2f114ad5cbf9ed30209471a",
-                "reference": "6ca133aa67837375f2f114ad5cbf9ed30209471a",
+                "url": "https://api.github.com/repos/roots/soil/zipball/e8e15c29f01414f86610445be8f7274b8b9a73b8",
+                "reference": "e8e15c29f01414f86610445be8f7274b8b9a73b8",
                 "shasum": ""
             },
             "require": {
@@ -588,7 +588,8 @@
                 "mockery/mockery": "^1.3 | ^1.4",
                 "phpcompatibility/php-compatibility": "^9.3",
                 "phpunit/phpunit": "<= 9.3",
-                "squizlabs/php_codesniffer": "^3.5"
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -628,7 +629,7 @@
             "support": {
                 "forum": "https://discourse.roots.io/",
                 "issues": "https://github.com/roots/soil/issues",
-                "source": "https://github.com/roots/soil/tree/4.0.5"
+                "source": "https://github.com/roots/soil/tree/4.1.1"
             },
             "funding": [
                 {
@@ -640,26 +641,26 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-07-27T17:22:59+00:00"
+            "time": "2022-08-01T17:32:31+00:00"
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/roots/wordpress-no-content.git",
-                "reference": "e835336a33b10ce4d738e75668ecd4bc480550ef"
+                "url": "https://github.com/WordPress/WordPress.git",
+                "reference": "6.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.0-no-content.zip",
-                "shasum": "6cc5252995f7a7c6060216286ddaacba445acd61"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.0.1-no-content.zip",
+                "shasum": "bd78fc2bea7f04683218c679f9e6b606eedf23bc"
             },
             "require": {
                 "php": ">= 5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "6.0"
+                "wordpress/core-implementation": "6.0.1"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -710,7 +711,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2022-05-24T19:14:34+00:00"
+            "time": "2022-07-12T16:30:11+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -1167,15 +1168,15 @@
         },
         {
             "name": "wpackagist-plugin/cloudflare",
-            "version": "4.9.1",
+            "version": "4.11.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cloudflare/",
-                "reference": "tags/4.9.1"
+                "reference": "tags/4.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.11.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1185,15 +1186,15 @@
         },
         {
             "name": "wpackagist-plugin/csp-manager",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/csp-manager/",
-                "reference": "tags/1.2.0"
+                "reference": "tags/1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/csp-manager.1.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/csp-manager.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1239,15 +1240,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "10.9.1",
+            "version": "11.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/10.9.1"
+                "reference": "tags/11.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.10.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.11.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1293,15 +1294,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "5.2.3",
+            "version": "5.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/5.2.3"
+                "reference": "tags/5.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.5.2.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.3.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1383,15 +1384,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-buffer",
-            "version": "3.8.0",
+            "version": "3.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-buffer/",
-                "reference": "tags/3.8.0"
+                "reference": "tags/3.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-buffer.3.8.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-buffer.3.8.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1917,16 +1918,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.6.2",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a"
+                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5e4e71592f69da17871dba6e80dd51bce74a351a",
-                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1359e176e9307e906dc3d890bcc9603ff6d90619",
+                "reference": "1359e176e9307e906dc3d890bcc9603ff6d90619",
                 "shasum": ""
             },
             "require": {
@@ -1969,7 +1970,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-12-12T21:44:58+00:00"
+            "time": "2022-06-18T07:21:10+00:00"
         }
     ],
     "aliases": [],
