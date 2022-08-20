@@ -17,12 +17,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3.0.2
+      - uses: actions/checkout@v3
 
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v3.4.1
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: "16"
+          cache: yarn
+          cache-dependency-path: site/web/app/themes/abundanthousingma/yarn.lock
 
       - run: cd site/web/app/themes/abundanthousingma && yarn
       - run: cd site/web/app/themes/abundanthousingma && yarn build
@@ -43,20 +45,21 @@ jobs:
     environment: production
 
     steps:
-      - uses: actions/checkout@v3.0.2
+      - uses: actions/checkout@v3
+
+      - uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.TRELLIS_DEPLOY_SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.TRELLIS_DEPLOY_SSH_KNOWN_HOSTS }}
 
       - uses: webfactory/ssh-agent@v0.5.4
         with:
-          ssh-private-key: ${{ secrets.ID_RSA_AHMA }}
+          ssh-private-key: ${{ secrets.TRELLIS_DEPLOY_SSH_PRIVATE_KEY }}
           ssh-auth-sock: ${{ github.workspace }}/ssh-auth.sock
 
-      - name: Trellis Deploy
-        uses: jeffbyrnes/trellis-action@v1.0.1
+      - uses: roots/setup-trellis-cli@v1
         with:
-          # ansible vault password
-          vault_password: ${{ secrets.VAULT_PASS }}
-          # the environment to deploy to (staging, production, etc)
-          site_env: production
-          # the WordPress site to deploy (name defined in wordpress_sites)
-          site_name: abundanthousingma.org
-          verbose: true
+          ansible-vault-password: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
+
+      - name: Deploy
+        run: trellis deploy production
