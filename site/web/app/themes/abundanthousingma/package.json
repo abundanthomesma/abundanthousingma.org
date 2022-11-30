@@ -58,7 +58,7 @@
     "import-glob": "~1.5",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss": "^8.3.5",
-    "postcss-loader": "^6.1.0",
+    "postcss-loader": "^7.0.2",
     "postcss-safe-parser": "^6.0.0",
     "resolve-url-loader": "^4.0.0",
     "rimraf": "^3.0.2",
