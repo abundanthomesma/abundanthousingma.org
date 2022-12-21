@@ -10,8 +10,6 @@
     from_host: "{{ hostvars[host] }}"
     url_from: "{{ from_host.wordpress_sites[site].site_hosts.0.canonical }}"
     url_to: "{{ hostvars.development_host.wordpress_sites[site].site_hosts.0.canonical }}"
-    email_from: "{{ from_host.wordpress_sites[site].admin_email }}"
-    email_to: "{{ hostvars.development_host.wordpress_sites[site].admin_email }}"
     local_bedrock_dir: "{{ hostvars.development_host.wordpress_sites[site].local_path }}"
     dump_file: "{{ site | regex_replace('\\.+', '_') }}_db_dump.sql.gz"
     current_date_and_time: "{{ ansible_date_time.date | regex_replace('\\-+', '_') }}_{{ ansible_date_time.hour }}_{{ ansible_date_time.minute }}_{{ ansible_date_time.second }}"
@@ -80,16 +78,8 @@
 
     - name: Search for {{ url_from }} and replace with {{ url_to }} on development
       delegate_to: development_host
-      command: wp search-replace '//{{ url_from }}' '//{{ url_to }}' --allow-root --all-tables
+      command: wp search-replace '//{{ url_from }}' '//{{ url_to }}' --allow-root --all-tables --precise
       args:
         chdir: "{{ project_web_dir }}"
       tags: ['search-replace']
-
-    - name: Search for {{ email_from }} and replace with {{ email_to }} on development
-      delegate_to: development_host
-      command: wp search-replace '//{{ email_from }}' '//{{ email_to }}' --allow-root --all-tables
-      args:
-        chdir: "{{ project_web_dir }}"
-      tags: ['search-replace']
-
     when: result.stat.exists is defined and result.stat.exists and result.stat.isdir is defined and result.stat.isdir

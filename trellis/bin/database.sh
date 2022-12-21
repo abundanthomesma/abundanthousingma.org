@@ -1,22 +1,22 @@
-#!/usr/bin/env bash
+#!/bin/bash
 shopt -s nullglob
 
 DATABASE_PULL_CMD="ansible-playbook database-pull.yml -e env=$1 -e site=$2"
 DATABASE_PUSH_CMD="ansible-playbook database-push.yml -e env=$1 -e site=$2"
 DATABASE_BACKUP_CMD="ansible-playbook database-backup.yml -e env=$1 -e site=$2"
-ENVIRONMENTS=(hosts/*)
-ENVIRONMENTS=("${ENVIRONMENTS[@]##*/}")
+ENVIRONMENTS=( hosts/* )
+ENVIRONMENTS=( "${ENVIRONMENTS[@]##*/}" )
 NUM_ARGS=3
 
 show_usage() {
   echo "Usage: ./database.sh <environment> <site name> <mode>
 
-<environment> is the environment to sync database ('staging', 'production', etc)
-<site name> is the WordPress site to sync database (name defined in 'wordpress_sites')
-<mode> is the sync mode ('push', 'pull', 'backup')
+<environment> is the environment to sync database ("staging", "production", etc)
+<site name> is the WordPress site to sync database (name defined in "wordpress_sites")
+<mode> is the sync mode ("push", "pull", "backup")
 
 Available environments:
-$(IFS=$'\n'; echo "${ENVIRONMENTS[*]}")
+`( IFS=$'\n'; echo "${ENVIRONMENTS[*]}" )`
 
 Examples:
   ./bin/database.sh staging example.com push
@@ -36,7 +36,7 @@ if [[ ! -e $HOSTS_FILE ]]; then
   echo "Error: $1 is not a valid environment ($HOSTS_FILE does not exist)."
   echo
   echo "Available environments:"
-  (IFS=$'\n'; echo "${ENVIRONMENTS[*]}")
+  ( IFS=$'\n'; echo "${ENVIRONMENTS[*]}" )
   exit 0
 fi
 
