@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Autoclose issues that did not follow issue template
-        uses: roots/issue-closer@v1.1
+        uses: roots/issue-closer@v1.2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-close-message: "Hi @${issue.user.login},
