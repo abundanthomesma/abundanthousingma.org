@@ -1393,15 +1393,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-to-buffer",
-            "version": "3.8.3",
+            "version": "3.8.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-to-buffer/",
-                "reference": "tags/3.8.3"
+                "reference": "tags/3.8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-to-buffer.3.8.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-to-buffer.3.8.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
